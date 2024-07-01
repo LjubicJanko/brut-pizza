@@ -1,28 +1,24 @@
+import { RouteObject } from 'react-router-dom';
 import { ContactsPage, HomePage, MenuPage } from './pages';
 
-export type Route = {
-  handle: string;
-  path: string;
-  component: React.FC;
-  routes?: Route[];
-  title?: string;
-};
+export const PATH = {
+  HOME: '/',
+  MENU: '/menu',
+  CONTACT: '/contact'
+}
 
-const routes: Route[] = [
+const routes: RouteObject[] = [
   {
-    handle: 'base',
-    path: '/',
-    component: () => <HomePage />,
+    path: PATH.HOME,
+    element: <HomePage />,
   },
   {
-    handle: 'menu',
-    path: '/menu',
-    component: () => <MenuPage />,
+    path: PATH.MENU,
+    element: <MenuPage />,
   },
   {
-    handle: 'contact',
-    path: '/contact',
-    component: () => <ContactsPage />,
+    path: PATH.CONTACT,
+    element: <ContactsPage />,
   },
 ];
 
