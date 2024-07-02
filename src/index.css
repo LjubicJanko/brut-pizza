@@ -1,12 +1,9 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  --e-global-color-primary: #7b0023;
+  --e-global-color-secondary: #690620;
+  --e-global-color-text: #ffffff;
+  --e-global-color-accent: #13491b;
+  --e-global-color-header-background: #390a18;
 }
 
 body {
