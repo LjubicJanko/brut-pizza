@@ -6,6 +6,9 @@ import { IconButton } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import classNames from 'classnames';
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
+import { PATH } from '../../routes';
+import { useChangeLanguage } from '../../hooks/useChangeLanguage';
 
 const Header = () => {
   const { t } = useTranslation();
@@ -15,18 +18,18 @@ const Header = () => {
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  const { changeLanguage } = useChangeLanguage();
+
   const menuItems = useMemo(
     () => [
       {
-        onClick: () => {},
-        // onClick: () => history.push(PATH.MENU),
+        to: PATH.MENU,
         title: t('menu'),
         isSelected: false,
       },
       {
-        onClick: () => {},
-        // onClick: () => history.push(PATH.CONTACT),
-        title: t('contact'),
+        to: PATH.ABOUT,
+        title: t('about'),
         isSelected: false,
       },
     ],
@@ -34,12 +37,6 @@ const Header = () => {
   );
   return (
     <Styled.HeaderContainer>
-      {/* <IconButton
-        aria-label="change-language"
-        onClick={() => setIsChangeLanguageDialogOpen(true)}
-      >
-        <TranslateIcon />
-      </IconButton> */}
       <img
         className="brut-logo"
         src={'brut.jpg'}
@@ -62,14 +59,31 @@ const Header = () => {
         >
           <ul className="hamburger-menu__content__list">
             {menuItems.map((item, index) => (
-              <li
-                key={index}
-                className="hamburger-menu__content__list__item"
-                onClick={item.onClick}
-              >
-                {item.title}
+              <li key={index} className="hamburger-menu__content__list__item">
+                <Link
+                  to={item.to}
+                  className="hamburger-menu__content__list__item--link"
+                >
+                  {item.title}
+                </Link>
               </li>
             ))}
+            <li>
+              <img
+                onClick={() => changeLanguage('en')}
+                className="en-flag"
+                src="assets/en.png"
+                alt="english"
+              />
+            </li>
+            <li>
+              <img
+                onClick={() => changeLanguage('rs')}
+                className="rs-flag"
+                src="assets/rs.png"
+                alt="serbian"
+              />
+            </li>
           </ul>
           <IconButton
             aria-label="change-language"

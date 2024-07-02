@@ -1,14 +1,14 @@
 import { Link } from 'react-router-dom';
 import { PATH } from '../../routes';
 
-const MenuPage = () => {
+const AboutPage = () => {
   return (
     <>
       <Link to={PATH.HOME}>GO TO HOME</Link>
       <br></br>
-      Menu
+      about
     </>
   );
 };
 
-export default MenuPage;
+export default AboutPage;

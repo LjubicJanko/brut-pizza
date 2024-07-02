@@ -1,25 +1,32 @@
 import { RouteObject } from 'react-router-dom';
-import { ContactsPage, HomePage, MenuPage } from './pages';
+import App from './App';
+import { AboutPage, MenuPage } from './pages';
+import AppLayout from './layouts/AppLayout';
 
 export const PATH = {
   HOME: '/',
   MENU: '/menu',
-  CONTACT: '/contact'
-}
+  ABOUT: '/about',
+};
 
 const routes: RouteObject[] = [
   {
-    path: PATH.HOME,
-    element: <HomePage />,
-  },
-  {
-    path: PATH.MENU,
-    element: <MenuPage />,
-  },
-  {
-    path: PATH.CONTACT,
-    element: <ContactsPage />,
+    path: '/',
+    element: <AppLayout />,
+    children: [
+      {
+        path: '/',
+        element: <App />,
+      },
+      {
+        path: PATH.MENU,
+        element: <MenuPage />,
+      },
+      {
+        path: PATH.ABOUT,
+        element: <AboutPage />,
+      },
+    ],
   },
 ];
-
 export default routes;

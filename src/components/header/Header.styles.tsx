@@ -35,12 +35,21 @@ export const HeaderContainer = styled.header`
       &__list {
         list-style-type: none;
         padding: 0;
-        &__item {
+
+        li {
           width: 100%;
           color: white;
-          border-bottom: 1px solid white;
+          border-bottom: 1px solid #57081d;
           padding-top: 4px;
           padding-bottom: 4px;
+        }
+        &__item {
+          &--link {
+            text-decoration: none;
+            font-size: 18px;
+            line-height: 25px;
+            color: var(--color-white);
+          }
         }
       }
       &--hidden {

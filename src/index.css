@@ -4,6 +4,9 @@
   --e-global-color-text: #ffffff;
   --e-global-color-accent: #13491b;
   --e-global-color-header-background: #390a18;
+  --color-green: #008c45;
+  --color-white: #f4f9ff;
+  --color-red: #cd212a;
 }
 
 body {
