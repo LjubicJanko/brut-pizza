@@ -5,8 +5,9 @@ export const HeaderContainer = styled.header`
   width: 100%;
 
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   border-bottom: 1px solid black;
   background-color: var(--e-global-color-header-background);
 
@@ -14,8 +15,7 @@ export const HeaderContainer = styled.header`
   padding-bottom: 2rem;
 
   .brut-logo {
-    position: absolute;
-    top: 1rem;
+    display: flex;
     width: 150px;
     @media (max-width: 767px) {
       width: 111px;
@@ -23,10 +23,33 @@ export const HeaderContainer = styled.header`
   }
 
   .hamburger-menu {
-    position: absolute;
-    right: 1rem;
-    button {
+    width: 100%;
+    &__button {
+      position: absolute;
+      right: 1rem;
+      top: 1rem;
       margin: 0;
+    }
+
+    &__content {
+      &__list {
+        list-style-type: none;
+        padding: 0;
+        &__item {
+          width: 100%;
+          color: white;
+          border-bottom: 1px solid white;
+          padding-top: 4px;
+          padding-bottom: 4px;
+        }
+      }
+      &--hidden {
+        display: none;
+      }
+    }
+
+    .MuiSvgIcon-root {
+      color: white;
     }
   }
 `;

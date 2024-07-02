@@ -1,15 +1,37 @@
-// import TranslateIcon from '@mui/icons-material/Translate';
-// import { IconButton } from '@mui/material';
-import { useState } from 'react';
+import TranslateIcon from '@mui/icons-material/Translate';
+import { useMemo, useState } from 'react';
 import { ChangeLanguageDialog } from '../dialogs';
 import * as Styled from './Header.styles';
 import { IconButton } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
+import classNames from 'classnames';
+import { useTranslation } from 'react-i18next';
 
 const Header = () => {
+  const { t } = useTranslation();
+
   const [isChangeLanguageDialogOpen, setIsChangeLanguageDialogOpen] =
     useState(false);
 
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const menuItems = useMemo(
+    () => [
+      {
+        onClick: () => {},
+        // onClick: () => history.push(PATH.MENU),
+        title: t('menu'),
+        isSelected: false,
+      },
+      {
+        onClick: () => {},
+        // onClick: () => history.push(PATH.CONTACT),
+        title: t('contact'),
+        isSelected: false,
+      },
+    ],
+    [t]
+  );
   return (
     <Styled.HeaderContainer>
       {/* <IconButton
@@ -27,13 +49,35 @@ const Header = () => {
       <div className="hamburger-menu">
         <IconButton
           size="large"
-          edge="start"
-          color="inherit"
           aria-label="menu"
-          sx={{ mr: 2 }}
+          className="hamburger-menu__button"
+          onClick={() => setIsMenuOpen((old) => !old)}
         >
-          <MenuIcon color="primary" />
+          <MenuIcon className="hamburger-icon" />
         </IconButton>
+        <div
+          className={classNames('hamburger-menu__content', {
+            'hamburger-menu__content--hidden': !isMenuOpen,
+          })}
+        >
+          <ul className="hamburger-menu__content__list">
+            {menuItems.map((item, index) => (
+              <li
+                key={index}
+                className="hamburger-menu__content__list__item"
+                onClick={item.onClick}
+              >
+                {item.title}
+              </li>
+            ))}
+          </ul>
+          <IconButton
+            aria-label="change-language"
+            onClick={() => setIsChangeLanguageDialogOpen(true)}
+          >
+            <TranslateIcon />
+          </IconButton>
+        </div>
       </div>
       <ChangeLanguageDialog
         isOpen={isChangeLanguageDialogOpen}
