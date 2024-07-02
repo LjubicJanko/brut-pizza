@@ -9,6 +9,12 @@
   --color-red: #cd212a;
 }
 
+#root {
+  max-width: 1280px;
+  width: 100%;
+  text-align: center;
+}
+
 body {
   margin: 0;
   display: flex;

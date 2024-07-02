@@ -1,6 +1,5 @@
 import { RouteObject } from 'react-router-dom';
-import App from './App';
-import { AboutPage, MenuPage } from './pages';
+import { AboutPage, HomePage, MenuPage } from './pages';
 import AppLayout from './layouts/AppLayout';
 
 export const PATH = {
@@ -16,7 +15,7 @@ const routes: RouteObject[] = [
     children: [
       {
         path: '/',
-        element: <App />,
+        element: <HomePage />,
       },
       {
         path: PATH.MENU,

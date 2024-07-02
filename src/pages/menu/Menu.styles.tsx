@@ -1,5 +1,5 @@
 import styled from 'styled-components';
 
-export const HomeContainer = styled.div`
+export const MenuPageContainer = styled.div`
   padding-top: 75px;
 `;

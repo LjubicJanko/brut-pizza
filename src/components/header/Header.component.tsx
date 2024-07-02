@@ -1,6 +1,4 @@
-import TranslateIcon from '@mui/icons-material/Translate';
 import { useMemo, useState } from 'react';
-import { ChangeLanguageDialog } from '../dialogs';
 import * as Styled from './Header.styles';
 import { IconButton } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
@@ -13,15 +11,17 @@ import { useChangeLanguage } from '../../hooks/useChangeLanguage';
 const Header = () => {
   const { t } = useTranslation();
 
-  const [isChangeLanguageDialogOpen, setIsChangeLanguageDialogOpen] =
-    useState(false);
-
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const { changeLanguage } = useChangeLanguage();
 
   const menuItems = useMemo(
     () => [
+      {
+        to: PATH.HOME,
+        title: t('home'),
+        isSelected: false,
+      },
       {
         to: PATH.MENU,
         title: t('menu'),
@@ -35,15 +35,18 @@ const Header = () => {
     ],
     [t]
   );
+
   return (
-    <Styled.HeaderContainer>
-      <img
-        className="brut-logo"
-        src={'brut.jpg'}
-        alt="brut-logo"
-        loading="lazy"
-      />
-      <div className="hamburger-menu">
+    <div style={{ display: 'flex', flexDirection: 'column' }}>
+      <Styled.HeaderContainer>
+        <img
+          className="brut-logo"
+          src={'brut.jpg'}
+          alt="brut-logo"
+          loading="lazy"
+        />
+      </Styled.HeaderContainer>
+      <Styled.HamburgerMenu className="hamburger-menu">
         <IconButton
           size="large"
           aria-label="menu"
@@ -55,6 +58,7 @@ const Header = () => {
         <div
           className={classNames('hamburger-menu__content', {
             'hamburger-menu__content--hidden': !isMenuOpen,
+            'hamburger-menu__content--visible': isMenuOpen,
           })}
         >
           <ul className="hamburger-menu__content__list">
@@ -63,6 +67,7 @@ const Header = () => {
                 <Link
                   to={item.to}
                   className="hamburger-menu__content__list__item--link"
+                  onClick={() => setIsMenuOpen(false)}
                 >
                   {item.title}
                 </Link>
@@ -85,19 +90,9 @@ const Header = () => {
               />
             </li>
           </ul>
-          <IconButton
-            aria-label="change-language"
-            onClick={() => setIsChangeLanguageDialogOpen(true)}
-          >
-            <TranslateIcon />
-          </IconButton>
         </div>
-      </div>
-      <ChangeLanguageDialog
-        isOpen={isChangeLanguageDialogOpen}
-        onClose={() => setIsChangeLanguageDialogOpen(false)}
-      />
-    </Styled.HeaderContainer>
+      </Styled.HamburgerMenu>
+    </div>
   );
 };
 
