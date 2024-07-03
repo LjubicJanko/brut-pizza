@@ -1,39 +1,50 @@
-import { useMemo, useState } from 'react';
+import { useMemo, useRef, useState } from 'react';
 import * as Styled from './Header.styles';
 import { IconButton } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
+import CloseIcon from '@mui/icons-material/Close';
 import classNames from 'classnames';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import { PATH } from '../../routes';
 import { useChangeLanguage } from '../../hooks/useChangeLanguage';
+import { useLocation } from 'react-router-dom';
+import useClickListener from '../../hooks/useClickListener';
 
 const Header = () => {
   const { t } = useTranslation();
+  const { pathname } = useLocation();
 
+  const hamburgerMenuRef = useRef<HTMLDivElement>(null);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const { changeLanguage } = useChangeLanguage();
+  const { changeLanguage, selectedLanguage } = useChangeLanguage();
+
+  useClickListener<HTMLDivElement>(
+    hamburgerMenuRef,
+    () => setIsMenuOpen(false),
+    isMenuOpen
+  );
 
   const menuItems = useMemo(
     () => [
       {
         to: PATH.HOME,
         title: t('home'),
-        isSelected: false,
+        isSelected: PATH.HOME === pathname,
       },
       {
         to: PATH.MENU,
         title: t('menu'),
-        isSelected: false,
+        isSelected: PATH.MENU === pathname,
       },
       {
         to: PATH.ABOUT,
         title: t('about'),
-        isSelected: false,
+        isSelected: PATH.ABOUT === pathname,
       },
     ],
-    [t]
+    [pathname, t]
   );
 
   return (
@@ -46,14 +57,14 @@ const Header = () => {
           loading="lazy"
         />
       </Styled.HeaderContainer>
-      <Styled.HamburgerMenu className="hamburger-menu">
+      <Styled.HamburgerMenu className="hamburger-menu" ref={hamburgerMenuRef}>
         <IconButton
           size="large"
           aria-label="menu"
           className="hamburger-menu__button"
           onClick={() => setIsMenuOpen((old) => !old)}
         >
-          <MenuIcon className="hamburger-icon" />
+          {isMenuOpen ? <CloseIcon /> : <MenuIcon />}
         </IconButton>
         <div
           className={classNames('hamburger-menu__content', {
@@ -63,7 +74,13 @@ const Header = () => {
         >
           <ul className="hamburger-menu__content__list">
             {menuItems.map((item, index) => (
-              <li key={index} className="hamburger-menu__content__list__item">
+              <li
+                key={index}
+                className={classNames('hamburger-menu__content__list__item', {
+                  'hamburger-menu__content__list__item--selected':
+                    item.isSelected,
+                })}
+              >
                 <Link
                   to={item.to}
                   className="hamburger-menu__content__list__item--link"
@@ -76,7 +93,9 @@ const Header = () => {
             <li>
               <img
                 onClick={() => changeLanguage('en')}
-                className="en-flag"
+                className={classNames('flag', {
+                  'flag--selected': selectedLanguage === 'en',
+                })}
                 src="assets/en.png"
                 alt="english"
               />
@@ -84,7 +103,9 @@ const Header = () => {
             <li>
               <img
                 onClick={() => changeLanguage('rs')}
-                className="rs-flag"
+                className={classNames('flag', {
+                  'flag--selected': selectedLanguage === 'rs',
+                })}
                 src="assets/rs.png"
                 alt="serbian"
               />

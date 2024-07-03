@@ -67,7 +67,14 @@ export const HamburgerMenu = styled.div`
           padding-bottom: 8px;
         }
         &__item {
+          &--selected {
+            background-color: var(--color-green);
+          }
+
           &--link {
+            display: flex;
+            justify-content: center;
+            width: 100%;
             text-decoration: none;
             font-size: 18px;
             line-height: 25px;
@@ -82,6 +89,15 @@ export const HamburgerMenu = styled.div`
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             color: transparent;
+          }
+        }
+
+        .flag {
+          &--selected {
+            position: relative;
+            display: inline-block;
+            padding: 1px;
+            border: 2px solid var(--color-green);
           }
         }
       }
