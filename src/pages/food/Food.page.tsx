@@ -1,11 +1,11 @@
 import { useTranslation } from 'react-i18next';
-import * as Styled from './Menu.styles';
+import * as Styled from './Food.styles';
 import { useLocation } from 'react-router-dom';
 import { useEffect } from 'react';
 import MenuItem from '../../components/menu-item/MenuItem.component';
 import menuData from '../../../assets/data/menu.json';
 
-const MenuPage = () => {
+const FoodPage = () => {
   const { t } = useTranslation();
   const { hash } = useLocation();
 
@@ -19,7 +19,7 @@ const MenuPage = () => {
   }, [hash]);
 
   return (
-    <Styled.MenuPageContainer>
+    <Styled.FoodPageContainer>
       <div id="pizza" className="section pizza">
         <h2 className="section-title">{t('pizza')}</h2>
         {menuData.pizza.map((pizza, index) => (
@@ -40,8 +40,8 @@ const MenuPage = () => {
           <MenuItem key={index} {...pancake} />
         ))}
       </div>
-    </Styled.MenuPageContainer>
+    </Styled.FoodPageContainer>
   );
 };
 
-export default MenuPage;
+export default FoodPage;

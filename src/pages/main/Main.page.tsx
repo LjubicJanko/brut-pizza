@@ -1,13 +1,13 @@
 import MenuCategories from '../../components/menu-categories/MenuCategories.component';
-import * as Styled from './Home.styles';
+import * as Styled from './Main.styles';
 
-const HomePage = () => {
+const MainPage = () => {
   return (
-    <Styled.HomeContainer>
+    <Styled.MainContainer>
       <p>Ферментација теста од минимум 30 сати.</p>
       <MenuCategories />
-    </Styled.HomeContainer>
+    </Styled.MainContainer>
   );
 };
 
-export default HomePage;
+export default MainPage;

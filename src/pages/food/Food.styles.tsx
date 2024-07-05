@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const MenuPageContainer = styled.div`
+export const FoodPageContainer = styled.div`
   padding: 16px;
   padding-top: 75px;
   height: 100%;
