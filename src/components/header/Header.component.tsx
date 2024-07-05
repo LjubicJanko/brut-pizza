@@ -5,7 +5,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 import classNames from 'classnames';
 import { useTranslation } from 'react-i18next';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { PATH } from '../../routes';
 import { useChangeLanguage } from '../../hooks/useChangeLanguage';
 import { useLocation } from 'react-router-dom';
@@ -14,6 +14,7 @@ import useClickListener from '../../hooks/useClickListener';
 const Header = () => {
   const { t } = useTranslation();
   const { pathname } = useLocation();
+  const navigate = useNavigate();
 
   const hamburgerMenuRef = useRef<HTMLDivElement>(null);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -55,6 +56,7 @@ const Header = () => {
           src={'brut.jpg'}
           alt="brut-logo"
           loading="lazy"
+          onClick={() => navigate(PATH.HOME)}
         />
       </Styled.HeaderContainer>
       <Styled.HamburgerMenu className="hamburger-menu" ref={hamburgerMenuRef}>
