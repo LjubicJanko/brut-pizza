@@ -9,7 +9,7 @@ export const HeaderContainer = styled.header`
   justify-content: center;
   align-items: center;
   border-bottom: 1px solid black;
-  background-color: var(--e-global-color-header-background);
+  background-color: var(--color-background-2);
 
   height: 75px;
 
@@ -27,7 +27,7 @@ export const HeaderContainer = styled.header`
 
 export const HamburgerMenu = styled.div`
   width: 100%;
-  background-color: var(--e-global-color-header-background);
+  background-color: var(--color-background-1);
 
   .hamburger-menu {
     &__button {

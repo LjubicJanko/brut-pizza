@@ -3,19 +3,43 @@ import styled from 'styled-components';
 export const MenuItemContainer = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  position: relative;
+  gap: 10px;
 
-
-  border: 1px solid black;
-
-  overflow: hidden;
-
-  .meal-image {
-    width: 70%;
+  img {
+    border-radius: 15%;
   }
 
-  .meal-ingredients {
-    font-size: 14px;
+  .name-and-price {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    .name {
+      max-width: 80%;
+      font-size: 22px;
+      color: var(--color-green);
+    }
+    .separator {
+      border-bottom-style: dashed;
+      border-bottom-width: 2px;
+      border-bottom-color: var(--color-white);
+      margin-left: 16px;
+      margin-right: 16px;
+      flex-grow: 1;
+      height: 0;
+    }
+    .price {
+      font-size: 16px;
+      color: var(--color-red);
+    }
   }
+
+  .ingredients {
+    font-size: 12px;
+    color: var(--color-white);
+    text-align: left;
+  }
+
+  /* border: 1px solid var(--color-white); */
 `;

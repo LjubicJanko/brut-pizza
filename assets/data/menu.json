@@ -1,0 +1,44 @@
+{
+  "pizza": [
+    {
+      "imgSrc": "/assets/img/pizza_transparent.png",
+      "name": "menu-pizza-brut-name",
+      "price": "800 / 1200 / 1700",
+      "ingredients": "menu-pizza-brut-ingredients"
+    },
+    {
+      "imgSrc": "/assets/img/corizo.jpg",
+      "name": "menu-pizza-corizo-name",
+      "price": "900 / 1400 / 1800",
+      "ingredients": "menu-pizza-corizo-ingredients"
+    }
+  ],
+  "sandwiches": [
+    {
+      "imgSrc": "/assets/img/sendvic.jpg",
+      "name": "menu-sandwiches-kulen-name",
+      "price": "500",
+      "ingredients": ""
+    },
+    {
+      "imgSrc": "/assets/img/sendvici.png",
+      "name": "menu-sandwiches-pecenica-name",
+      "price": "500",
+      "ingredients": ""
+    }
+  ],
+  "pancakes": [
+    {
+      "imgSrc": "/assets/img/eurokrem.jpg",
+      "name": "menu-pancakes-eurokrem-name",
+      "price": "290",
+      "ingredients": ""
+    },
+    {
+      "imgSrc": "/assets/img/svarcvald.jpg",
+      "name": "menu-pancakes-svarcvald-name",
+      "price": "290",
+      "ingredients": "menu-pancakes-svarcvald-ingredients"
+    }
+  ]
+}

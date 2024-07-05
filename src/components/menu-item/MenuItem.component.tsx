@@ -1,20 +1,28 @@
-import Heading from '../atoms/Heading/Heading.component';
+import { useTranslation } from 'react-i18next';
 import * as Styled from './MenuItem.styles';
 
 export type MenuItemProps = {
-  title: string;
-  imageSrc: string;
-  ingredients: string;
+  imgSrc: string;
+  name: string;
   price: string;
+  ingredients: string;
 };
 
-const MenuItem = ({ title, imageSrc, ingredients, price }: MenuItemProps) => {
+const MenuItem = ({ imgSrc, name, price, ingredients }: MenuItemProps) => {
+  const { t } = useTranslation();
+
   return (
     <Styled.MenuItemContainer>
-      <Heading type={'2'}>{title}</Heading>
-      <img className="meal-image" src={imageSrc} />
-      <p className="meal-ingredients">{ingredients}</p>
-      <Heading type={'3'}>{price}</Heading>
+      <img src={imgSrc} />
+      <div className="name-and-price">
+        <span className="name">{t(name)}</span>
+        <span className="separator"></span>
+        <span className="price">
+          {price}&nbsp;
+          {t('dinars')}
+        </span>
+      </div>
+      <p className="ingredients">{t(ingredients)}</p>
     </Styled.MenuItemContainer>
   );
 };

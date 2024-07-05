@@ -96,7 +96,7 @@ const Header = () => {
                 className={classNames('flag', {
                   'flag--selected': selectedLanguage === 'en',
                 })}
-                src="assets/en.png"
+                src="assets/img/en.png"
                 alt="english"
               />
             </li>
@@ -106,7 +106,7 @@ const Header = () => {
                 className={classNames('flag', {
                   'flag--selected': selectedLanguage === 'rs',
                 })}
-                src="assets/rs.png"
+                src="assets/img/rs.png"
                 alt="serbian"
               />
             </li>
