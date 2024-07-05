@@ -1,6 +1,8 @@
 import { RouteObject } from 'react-router-dom';
-import { AboutPage, HomePage, MenuPage } from './pages';
 import AppLayout from './layouts/AppLayout';
+import AboutPage from './pages/about';
+import HomePage from './pages/home';
+import MenuPage from './pages/menu';
 
 export const PATH = {
   HOME: '/',
