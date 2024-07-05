@@ -40,5 +40,85 @@
       "price": "290",
       "ingredients": "menu-pancakes-svarcvald-ingredients"
     }
+  ],
+  "drinks": [
+    {
+      "imgSrc": "",
+      "name": "menu-drinks-pepsi-name",
+      "price": "180",
+      "ingredients": ""
+    },
+    {
+      "imgSrc": "",
+      "name": "menu-drinks-pepsi_max-name",
+      "price": "180",
+      "ingredients": ""
+    },
+    {
+      "imgSrc": "",
+      "name": "menu-drinks-mirinda-name",
+      "price": "180",
+      "ingredients": ""
+    },
+    {
+      "imgSrc": "",
+      "name": "menu-drinks-7up-name",
+      "price": "180",
+      "ingredients": ""
+    },
+    {
+      "imgSrc": "",
+      "name": "menu-drinks-heineken-name",
+      "price": "250",
+      "ingredients": ""
+    },
+    {
+      "imgSrc": "",
+      "name": "menu-drinks-apple-name",
+      "price": "200",
+      "ingredients": ""
+    },
+    {
+      "imgSrc": "",
+      "name": "menu-drinks-orange-name",
+      "price": "200",
+      "ingredients": ""
+    },
+    {
+      "imgSrc": "",
+      "name": "menu-drinks-peach-name",
+      "price": "200",
+      "ingredients": ""
+    },
+    {
+      "imgSrc": "",
+      "name": "menu-drinks-knjaz_milos-name",
+      "price": "120",
+      "ingredients": ""
+    },
+    {
+      "imgSrc": "",
+      "name": "menu-drinks-knjaz_milos_limun-name",
+      "price": "150",
+      "ingredients": ""
+    },
+    {
+      "imgSrc": "",
+      "name": "menu-drinks-aqua_viva-name",
+      "price": "120",
+      "ingredients": ""
+    },
+    {
+      "imgSrc": "",
+      "name": "menu-drinks-guarana-name",
+      "price": "150",
+      "ingredients": ""
+    },
+    {
+      "imgSrc": "",
+      "name": "menu-drinks-guarana_joker-name",
+      "price": "180",
+      "ingredients": ""
+    }
   ]
 }

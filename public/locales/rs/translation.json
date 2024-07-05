@@ -8,6 +8,7 @@
   "pizza": "Пице",
   "sandwiches": "Сендвичи",
   "pancakes": "Палачинке",
+  "drinks": "Пиће",
   "dinars": "рсд",
   "menu-pizza-brut-name": "Брут",
   "menu-pizza-brut-ingredients": "Пелат, шунка, гауда, шампињони, кулен, печеница, кајмак, маслине, оригано",
@@ -17,5 +18,18 @@
   "menu-sandwiches-pecenica-name": "Печеница",
   "menu-pancakes-eurokrem-name": "Еурокрем",
   "menu-pancakes-svarcvald-name": "Шварцвалд",
-  "menu-pancakes-svarcvald-ingredients": "Нутела, плазма, вишње, шлаг"
+  "menu-pancakes-svarcvald-ingredients": "Нутела, плазма, вишње, шлаг",
+  "menu-drinks-pepsi-name": "Пепси 0,33",
+  "menu-drinks-pepsi_max-name": "Пепси макс 0,33",
+  "menu-drinks-mirinda-name": "Миринда 0,33",
+  "menu-drinks-7up-name": "7up 0,33",
+  "menu-drinks-heineken-name": "Хајникен 0,25",
+  "menu-drinks-apple-name": "Густо-Јабука 0,2",
+  "menu-drinks-orange-name": "Густо-Наранџа 0,2",
+  "menu-drinks-peach-name": "Густо-Бресква 0,2",
+  "menu-drinks-knjaz_milos-name": "Књаз Милош 0,5",
+  "menu-drinks-knjaz_milos_limun-name": "Књаз Милош-Лимун 0,5",
+  "menu-drinks-aqua_viva-name": "Аква Вива 0,5",
+  "menu-drinks-guarana-name": "Гуарана 0,25",
+  "menu-drinks-guarana_joker-name": "Гуарана Џокер 0,25"
 }

@@ -22,23 +22,38 @@ const FoodPage = () => {
     <Styled.FoodPageContainer>
       <div id="pizza" className="section pizza">
         <h2 className="section-title">{t('pizza')}</h2>
-        {menuData.pizza.map((pizza, index) => (
-          <MenuItem key={index} {...pizza} />
-        ))}
+        <div className="section-items">
+          {menuData.pizza.map((pizza, index) => (
+            <MenuItem key={index} {...pizza} />
+          ))}
+        </div>
       </div>
       <div className="divider" />
       <div id="sandwiches" className="section sandwiches">
         <h2 className="section-title">{t('sandwiches')}</h2>
-        {menuData.sandwiches.map((sandwich, index) => (
-          <MenuItem key={index} {...sandwich} />
-        ))}
+        <div className="section-items">
+          {menuData.sandwiches.map((sandwich, index) => (
+            <MenuItem key={index} {...sandwich} />
+          ))}
+        </div>
       </div>
       <div className="divider" />
       <div id="pancakes" className="section pancakes">
         <h2 className="section-title">{t('pancakes')}</h2>
-        {menuData.pancakes.map((pancake, index) => (
-          <MenuItem key={index} {...pancake} />
-        ))}
+        <div className="section-items">
+          {menuData.pancakes.map((pancake, index) => (
+            <MenuItem key={index} {...pancake} />
+          ))}
+        </div>
+      </div>
+      <div className="divider" />
+      <div id="drinks" className="section drinks">
+        <h2 className="section-title">{t('drinks')}</h2>
+        <div className="section-items">
+          {menuData.drinks.map((drinks, index) => (
+            <MenuItem key={index} {...drinks} />
+          ))}
+        </div>
       </div>
     </Styled.FoodPageContainer>
   );

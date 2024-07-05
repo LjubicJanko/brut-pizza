@@ -8,6 +8,7 @@
   "pizza": "Pizza",
   "sandwiches": "Sandwiches",
   "pancakes": "Pancakes",
+  "drinks": "Drinks",
   "dinars": "rsd",
   "menu-pizza-brut-name": "Brut",
   "menu-pizza-brut-ingredients": "Pelat, Ham, Gouda cheese, Mushrooms, Kulen, Smoked pork loin, Creamy dairy spread, Olives, Oregano",
@@ -17,5 +18,18 @@
   "menu-sandwiches-pecenica-name": "Smoked pork loin",
   "menu-pancakes-eurokrem-name": "Eurocrem",
   "menu-pancakes-svarcvald-name": "Schwarzwald",
-  "menu-pancakes-svarcvald-ingredients": "Nutella, Plazma biscuits, Cherries, Whipped cream"
+  "menu-pancakes-svarcvald-ingredients": "Nutella, Plazma biscuits, Cherries, Whipped cream",
+  "menu-drinks-pepsi-name": "Pepsi 0,33",
+  "menu-drinks-pepsi_max-name": "Pepsi Max 0,33",
+  "menu-drinks-mirinda-name": "Mirinda 0,33",
+  "menu-drinks-7up-name": "7up 0,33",
+  "menu-drinks-heineken-name": "Heineken 0,25",
+  "menu-drinks-apple-name": "Thick Apple juice 0,2",
+  "menu-drinks-orange-name": "Thick Orange juice 0,2",
+  "menu-drinks-peach-name": "Thick Peach juice 0,2",
+  "menu-drinks-knjaz_milos-name": "Knjaz Milos 0,5",
+  "menu-drinks-knjaz_milos_limun-name": "Knjaz Milos-Lemon 0,5",
+  "menu-drinks-aqua_viva-name": "Aqua Viva 0,5",
+  "menu-drinks-guarana-name": "Guarana 0,25",
+  "menu-drinks-guarana_joker-name": "Guarana Joker 0,25"
 }

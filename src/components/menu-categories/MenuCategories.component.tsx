@@ -18,7 +18,7 @@ const MenuCategories = () => {
     () => [
       {
         title: 'pizza',
-        imageSrc: '/pizza_transparent.png',
+        imageSrc: '/file.png',
         to: '/menu#pizza',
       },
       {
@@ -28,8 +28,13 @@ const MenuCategories = () => {
       },
       {
         title: 'pancakes',
-        imageSrc: '/pizza_transparent.png',
+        imageSrc: '/svarcvald.jpg',
         to: '/menu#pancakes',
+      },
+      {
+        title: 'drinks',
+        imageSrc: '/drinks.jpg',
+        to: '/menu#drinks',
       },
     ],
     []
@@ -41,7 +46,7 @@ const MenuCategories = () => {
         <FlipCard
           key={index}
           front={
-            <div>
+            <div className="front-inner">
               <img src={menuCategory.imageSrc} />
               <p>{t(menuCategory.title)}</p>
             </div>

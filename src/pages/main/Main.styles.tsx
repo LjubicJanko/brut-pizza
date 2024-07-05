@@ -9,4 +9,8 @@ export const MainContainer = styled.div`
   display: flex;
   flex-direction: column;
   gap: 32px;
+
+  @media (min-width: 767px) {
+    padding-top: 115px;
+  }
 `;

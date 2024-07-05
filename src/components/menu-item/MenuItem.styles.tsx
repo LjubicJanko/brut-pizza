@@ -17,7 +17,7 @@ export const MenuItemContainer = styled.div`
     align-items: center;
     .name {
       max-width: 80%;
-      font-size: 22px;
+      font-size: 18px;
       color: var(--color-green);
     }
     .separator {
