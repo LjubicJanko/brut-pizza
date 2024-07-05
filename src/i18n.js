@@ -12,7 +12,7 @@ i18n
     fallbackLng: 'en',
     debug: true,
     backend: {
-      loadPath: 'assets/locales/{{lng}}/{{ns}}.json',
+      loadPath: 'public/locales/{{lng}}/{{ns}}.json',
     },
     detection: {
       order: [

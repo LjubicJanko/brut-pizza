@@ -3,7 +3,7 @@ import * as Styled from './Food.styles';
 import { useLocation } from 'react-router-dom';
 import { useEffect } from 'react';
 import MenuItem from '../../components/menu-item/MenuItem.component';
-import menuData from '../../../assets/data/menu.json';
+import menuData from '../../../public/data/menu.json';
 
 const FoodPage = () => {
   const { t } = useTranslation();

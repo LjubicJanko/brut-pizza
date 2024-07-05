@@ -18,17 +18,17 @@ const MenuCategories = () => {
     () => [
       {
         title: 'pizza',
-        imageSrc: '/assets/img/pizza_transparent.png',
+        imageSrc: '/pizza_transparent.png',
         to: '/menu#pizza',
       },
       {
         title: 'sandwiches',
-        imageSrc: '/assets/img/sendvic.jpg',
+        imageSrc: '/sendvic.jpg',
         to: '/menu#sandwiches',
       },
       {
         title: 'pancakes',
-        imageSrc: '/assets/img/pizza_transparent.png',
+        imageSrc: '/pizza_transparent.png',
         to: '/menu#pancakes',
       },
     ],
