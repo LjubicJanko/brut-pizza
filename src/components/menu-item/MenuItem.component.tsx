@@ -2,18 +2,35 @@ import { useTranslation } from 'react-i18next';
 import * as Styled from './MenuItem.styles';
 
 export type MenuItemProps = {
-  imgSrc: string;
+  imgSrc?: string;
   name: string;
   price: string;
-  ingredients: string;
+  ingredients?: string;
+  className?: string;
 };
 
-const MenuItem = ({ imgSrc, name, price, ingredients }: MenuItemProps) => {
+const placeholderImage = '/placeholder.png';
+
+const MenuItem = ({
+  imgSrc,
+  name,
+  price,
+  ingredients,
+  className,
+}: MenuItemProps) => {
   const { t } = useTranslation();
 
   return (
-    <Styled.MenuItemContainer>
-      <img src={imgSrc} />
+    <Styled.MenuItemContainer className={className}>
+      {imgSrc && (
+        <img
+          src={imgSrc}
+          onError={({ currentTarget }) => {
+            currentTarget.onerror = null;
+            currentTarget.src = placeholderImage;
+          }}
+        />
+      )}
       <div className="name-and-price">
         <span className="name">{t(name)}</span>
         <span className="separator"></span>
@@ -22,7 +39,7 @@ const MenuItem = ({ imgSrc, name, price, ingredients }: MenuItemProps) => {
           {t('dinars')}
         </span>
       </div>
-      <p className="ingredients">{t(ingredients)}</p>
+      {ingredients && <p className="ingredients">{t(ingredients)}</p>}
     </Styled.MenuItemContainer>
   );
 };

@@ -11,6 +11,162 @@
       "name": "menu-pizza-corizo-name",
       "price": "900 / 1400 / 1800",
       "ingredients": "menu-pizza-corizo-ingredients"
+    },
+    {
+      "imgSrc": "/madjarica.jpg",
+      "name": "menu-pizza-madjarica-name",
+      "price": "650 / 1200 / 1600",
+      "ingredients": "menu-pizza-madjarica-ingredients"
+    },
+    {
+      "imgSrc": "/prsuto.jpg",
+      "name": "menu-pizza-prsuto-name",
+      "price": "750 / 1200 / 1750",
+      "ingredients": "menu-pizza-prsuto-ingredients"
+    },
+    {
+      "imgSrc": "/vojvodjanka.jpg",
+      "name": "menu-pizza-vojvodjanka-name",
+      "price": "750 / 1200 / 1700",
+      "ingredients": "menu-pizza-vojvodjanka-ingredients"
+    },
+    {
+      "imgSrc": "/quattro_stagioni.jpg",
+      "name": "menu-pizza-quattro_stagioni-name",
+      "price": "750 / 1200 / 1700",
+      "ingredients": "menu-pizza-quattro_stagioni-ingredients"
+    },
+    {
+      "imgSrc": "/kapricoza.jpg",
+      "name": "menu-pizza-kapricoza-name",
+      "price": "600 / 1000 / 1500",
+      "ingredients": "menu-pizza-kapricoza-ingredients"
+    },
+    {
+      "imgSrc": "/karbonara.jpg",
+      "name": "menu-pizza-karbonara-name",
+      "price": "650 / 950 / 1400",
+      "ingredients": "menu-pizza-karbonara-ingredients"
+    },
+    {
+      "imgSrc": "/provolone.jpg",
+      "name": "menu-pizza-provolone-name",
+      "price": "750 / 1150 / 1750",
+      "ingredients": "menu-pizza-provolone-ingredients"
+    },
+    {
+      "imgSrc": "/quattro_formaggi.jpg",
+      "name": "menu-pizza-quattro_formaggi-name",
+      "price": "650 / 1050 / 1650",
+      "ingredients": "menu-pizza-quattro_formaggi-ingredients"
+    },
+    {
+      "imgSrc": "/funghi.jpg",
+      "name": "menu-pizza-funghi-name",
+      "price": "550 / 1000 / 1400",
+      "ingredients": "menu-pizza-funghi-ingredients"
+    },
+    {
+      "imgSrc": "/margarita.jpg",
+      "name": "menu-pizza-margarita-name",
+      "price": "550 / 900 / 1200",
+      "ingredients": "menu-pizza-margarita-ingredients"
+    },
+    {
+      "imgSrc": "/vegetarijana.jpg",
+      "name": "menu-pizza-vegetarijana-name",
+      "price": "500 / 900 / 1300",
+      "ingredients": "menu-pizza-vegetarijana-ingredients"
+    },
+    {
+      "imgSrc": "/tuna.jpg",
+      "name": "menu-pizza-tuna-name",
+      "price": "650 / 1050 / 1600",
+      "ingredients": "menu-pizza-tuna-ingredients"
+    },
+    {
+      "imgSrc": "/parce.jpg",
+      "name": "menu-pizza-parce-name",
+      "price": "250",
+      "ingredients": "menu-pizza-parce-ingredients"
+    }
+  ],
+  "pizza_additions": [
+    {
+      "name": "menu-pizza_additions-pavlaka",
+      "price": "60"
+    },
+    {
+      "name": "menu-pizza_additions-majonez",
+      "price": "60"
+    },
+    {
+      "name": "menu-pizza_additions-kajmak",
+      "price": "100"
+    },
+    {
+      "name": "menu-pizza_additions-jaje",
+      "price": "50"
+    },
+    {
+      "name": "menu-pizza_additions-masline",
+      "price": "50"
+    },
+    {
+      "name": "menu-pizza_additions-sampinjoni",
+      "price": "50"
+    },
+    {
+      "name": "menu-pizza_additions-gauda",
+      "price": "80"
+    },
+    {
+      "name": "menu-pizza_additions-mocarela",
+      "price": "150"
+    },
+    {
+      "name": "menu-pizza_additions-feta",
+      "price": "80"
+    },
+    {
+      "name": "menu-pizza_additions-provolone",
+      "price": "250"
+    },
+    {
+      "name": "menu-pizza_additions-parmezan",
+      "price": "100"
+    },
+    {
+      "name": "menu-pizza_additions-gorgonzola",
+      "price": "230"
+    },
+    {
+      "name": "menu-pizza_additions-prsuta",
+      "price": "160"
+    },
+    {
+      "name": "menu-pizza_additions-pecenica",
+      "price": "140"
+    },
+    {
+      "name": "menu-pizza_additions-suvi_vrat",
+      "price": "80"
+    },
+    {
+      "name": "menu-pizza_additions-panceta",
+      "price": "150"
+    },
+    {
+      "name": "menu-pizza_additions-kulen",
+      "price": "120"
+    },
+    {
+      "name": "menu-pizza_additions-sunka",
+      "price": "70"
+    },
+    {
+      "name": "menu-pizza_additions-pileca_prsa",
+      "price": "70"
     }
   ],
   "sandwiches": [
@@ -25,6 +181,42 @@
       "name": "menu-sandwiches-pecenica-name",
       "price": "500",
       "ingredients": ""
+    },
+    {
+      "imgSrc": "/sendvici.png",
+      "name": "menu-sandwiches-pileca_prsa-name",
+      "price": "450",
+      "ingredients": ""
+    },
+    {
+      "imgSrc": "/sendvici.png",
+      "name": "menu-sandwiches-sunka-name",
+      "price": "450",
+      "ingredients": ""
+    },
+    {
+      "imgSrc": "/sendvici.png",
+      "name": "menu-sandwiches-prsuta-name",
+      "price": "530",
+      "ingredients": ""
+    },
+    {
+      "imgSrc": "/sendvici.png",
+      "name": "menu-sandwiches-suvi_vrat-name",
+      "price": "500",
+      "ingredients": ""
+    },
+    {
+      "imgSrc": "/sendvici.png",
+      "name": "menu-sandwiches-brut-name",
+      "price": "590",
+      "ingredients": ""
+    },
+    {
+      "imgSrc": "/sendvici.png",
+      "name": "menu-sandwiches-madjarica-name",
+      "price": "500",
+      "ingredients": ""
     }
   ],
   "pancakes": [
@@ -35,10 +227,76 @@
       "ingredients": ""
     },
     {
+      "imgSrc": "/eurokrem_plazma.jpg",
+      "name": "menu-pancakes-eurokrem_plazma-name",
+      "price": "300",
+      "ingredients": ""
+    },
+    {
+      "imgSrc": "/eurokrem_plazma_mleko.jpg",
+      "name": "menu-pancakes-eurokrem_plazma_mleko-name",
+      "price": "360",
+      "ingredients": ""
+    },
+    {
+      "imgSrc": "/nutela.jpg",
+      "name": "menu-pancakes-nutela-name",
+      "price": "300",
+      "ingredients": ""
+    },
+    {
+      "imgSrc": "/nutela_plazma.jpg",
+      "name": "menu-pancakes-nutela_plazma-name",
+      "price": "310",
+      "ingredients": ""
+    },
+    {
+      "imgSrc": "/nutela_plazma_mleko.jpg",
+      "name": "menu-pancakes-nutela_plazma_mleko-name",
+      "price": "370",
+      "ingredients": ""
+    },
+    {
+      "imgSrc": "/eurokrem_plazma_banana.jpg",
+      "name": "menu-pancakes-eurokrem_plazma_banana-name",
+      "price": "370",
+      "ingredients": ""
+    },
+    {
+      "imgSrc": "/nutela_plazma_banana.jpg",
+      "name": "menu-pancakes-nutela_plazma_banana-name",
+      "price": "370",
+      "ingredients": ""
+    },
+    {
       "imgSrc": "/svarcvald.jpg",
       "name": "menu-pancakes-svarcvald-name",
       "price": "290",
       "ingredients": "menu-pancakes-svarcvald-ingredients"
+    },
+    {
+      "imgSrc": "/snikers.jpg",
+      "name": "menu-pancakes-snikers-name",
+      "price": "380",
+      "ingredients": "menu-pancakes-snikers-ingredients"
+    },
+    {
+      "imgSrc": "/ferero.jpg",
+      "name": "menu-pancakes-ferero-name",
+      "price": "380",
+      "ingredients": "menu-pancakes-ferero-ingredients"
+    },
+    {
+      "imgSrc": "/med_orasi.jpg",
+      "name": "menu-pancakes-med_orasi-name",
+      "price": "270",
+      "ingredients": ""
+    },
+    {
+      "imgSrc": "/marmelada.jpg",
+      "name": "menu-pancakes-marmelada-name",
+      "price": "250",
+      "ingredients": ""
     }
   ],
   "drinks": [

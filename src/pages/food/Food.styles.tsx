@@ -55,6 +55,15 @@ export const FoodPageContainer = styled.div`
       font-size: 22px;
       color: var(--color-white);
     }
+
+    .section-subtitle {
+      font-size: 18px;
+      color: var(--color-white);
+    }
+  }
+
+  .section-additions-item {
+    gap: unset;
   }
 
   .drinks {

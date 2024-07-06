@@ -27,6 +27,16 @@ const FoodPage = () => {
             <MenuItem key={index} {...pizza} />
           ))}
         </div>
+        <h2 className="section-subtitle">{t('pizza_additions')}</h2>
+        <div className="section-additions">
+          {menuData.pizza_additions.map((addition, index) => (
+            <MenuItem
+              key={index}
+              className="section-additions-item"
+              {...addition}
+            />
+          ))}
+        </div>
       </div>
       <div className="divider" />
       <div id="sandwiches" className="section sandwiches">
