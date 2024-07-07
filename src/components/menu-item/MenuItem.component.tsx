@@ -1,11 +1,14 @@
 import { useTranslation } from 'react-i18next';
 import * as Styled from './MenuItem.styles';
 
-export type MenuItemProps = {
+export type MenuItemType = {
   imgSrc?: string;
   name: string;
   price: string;
   ingredients?: string;
+};
+
+export type MenuItemProps = MenuItemType & {
   className?: string;
 };
 

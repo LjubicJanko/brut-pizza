@@ -299,6 +299,44 @@
       "ingredients": ""
     }
   ],
+  "pancakes_additions": [
+    {
+      "name": "menu-pizza_additions-eurokrem",
+      "price": "80"
+    },
+    {
+      "name": "menu-pizza_additions-nutela",
+      "price": "90"
+    },
+    {
+      "name": "menu-pizza_additions-plazma",
+      "price": "60"
+    },
+    {
+      "name": "menu-pizza_additions-plazma_mleko",
+      "price": "100"
+    },
+    {
+      "name": "menu-pizza_additions-orasi",
+      "price": "60"
+    },
+    {
+      "name": "menu-pizza_additions-lesnik",
+      "price": "60"
+    },
+    {
+      "name": "menu-pizza_additions-kikiriki",
+      "price": "60"
+    },
+    {
+      "name": "menu-pizza_additions-visnja",
+      "price": "60"
+    },
+    {
+      "name": "menu-pizza_additions-banana",
+      "price": "60"
+    }
+  ],
   "drinks": [
     {
       "imgSrc": "",

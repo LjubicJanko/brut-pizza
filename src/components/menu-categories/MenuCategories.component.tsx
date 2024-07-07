@@ -18,7 +18,7 @@ const MenuCategories = () => {
     () => [
       {
         title: 'pizza',
-        imageSrc: '/file.png',
+        imageSrc: '/corizo.jpg',
         to: '/menu#pizza',
       },
       {
