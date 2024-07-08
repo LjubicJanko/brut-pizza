@@ -1,4 +1,4 @@
-import Tabs, { tabsClasses } from '@mui/material/Tabs';
+import { tabsClasses } from '@mui/material/Tabs';
 import { t } from 'i18next';
 import * as Styled from './BrutTabs.styles';
 
@@ -17,15 +17,14 @@ const tabNamesOrderMap: TabName[] = [
 ];
 
 export const BrutTabs = ({ activeTab, setActiveTab }: BrutTabsProps) => {
-  // const [tabIndex, setTabIndex] = React.useState(0);
   return (
-    <Tabs
+    <Styled.BrutTabsContainer
       value={tabNamesOrderMap.indexOf(activeTab)}
       onChange={(_e, index) => {
         setActiveTab(tabNamesOrderMap[index]);
       }}
+      className="tabs"
       sx={{
-        marginLeft: 1,
         [`& .${tabsClasses.indicator}`]: {
           height: 3,
           borderTopLeftRadius: '3px',
@@ -54,6 +53,6 @@ export const BrutTabs = ({ activeTab, setActiveTab }: BrutTabsProps) => {
         label={t('drinks')}
         className="drinks-tab"
       />
-    </Tabs>
+    </Styled.BrutTabsContainer>
   );
 };

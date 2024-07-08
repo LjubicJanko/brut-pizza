@@ -25,50 +25,21 @@ export const FoodPageContainer = styled.div`
     );
   }
 
-  .section {
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
-    min-height: 300px;
-    color: var(--color-white);
-
-    .section-items {
-      display: flex;
-      flex-direction: column;
-      gap: 32px;
-      img {
-        max-width: 100%;
-        max-height: 100%;
-        display: block;
-      }
-      @media (min-width: 767px) {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-      }
-      @media (min-width: 1024px) {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-      }
-    }
-
-    .section-title {
-      font-size: 22px;
-      color: var(--color-white);
-    }
-
-    .section-subtitle {
-      font-size: 18px;
-      color: var(--color-white);
-    }
+  .fade-enter {
+    opacity: 0;
   }
 
-  .section-additions-item {
-    gap: unset;
+  .fade-enter-active {
+    opacity: 1;
+    transition: opacity 300ms;
   }
 
-  .drinks {
-    .section-items {
-      gap: 8px;
-    }
+  .fade-exit {
+    opacity: 1;
+  }
+
+  .fade-exit-active {
+    opacity: 0;
+    transition: opacity 300ms;
   }
 `;

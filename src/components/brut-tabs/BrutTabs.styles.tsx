@@ -1,11 +1,17 @@
+import { Tabs } from '@mui/material';
 import { styled } from '@mui/material/styles';
 import Tab from '@mui/material/Tab';
+
+export const BrutTabsContainer = styled(Tabs)`
+  .MuiTabs-flexContainer {
+    justify-content: space-between;
+  }
+`;
 
 export const BrutTabContainer = styled(Tab)`
   text-transform: initial;
   min-width: 0;
   letter-spacing: 0.5px;
-  margin: ${({ theme }) => theme.spacing(0, 2)};
   padding: 0;
   overflow: unset;
   font-weight: 500;
@@ -38,5 +44,4 @@ export const BrutTabContainer = styled(Tab)`
   &.drinks-tab {
     color: #1976d2;
   }
-  
 `;

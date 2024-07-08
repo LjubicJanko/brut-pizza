@@ -11,6 +11,7 @@ import {
   MenuCategoryProps,
 } from '../../components/menu-category/MenuCategory.component';
 import * as Styled from './Food.styles';
+import { CSSTransition, TransitionGroup } from 'react-transition-group';
 
 const FoodPage = () => {
   const { t } = useTranslation();
@@ -55,7 +56,12 @@ const FoodPage = () => {
     <Styled.FoodPageContainer>
       <BrutTabs activeTab={activeTab} setActiveTab={setActiveTab} />
       <div className="divider" />
-      <MenuCategory {...foodMap[activeTab]} />
+      <TransitionGroup>
+        <CSSTransition key={activeTab} timeout={300} classNames="fade">
+          <MenuCategory {...foodMap[activeTab]} />
+        </CSSTransition>
+      </TransitionGroup>
+      {/* <MenuCategory {...foodMap[activeTab]} /> */}
     </Styled.FoodPageContainer>
   );
 };
