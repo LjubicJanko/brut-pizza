@@ -2,7 +2,7 @@ import { RouteObject } from 'react-router-dom';
 import AppLayout from './layouts/AppLayout';
 import AboutPage from './pages/about/About.page';
 import MainPage from './pages/main/Main.page';
-import FoodPage from './pages/food/Food.page';
+import MenuPage from './pages/menu/Menu.page';
 
 export const PATH = {
   HOME: '/',
@@ -21,7 +21,7 @@ const routes: RouteObject[] = [
       },
       {
         path: PATH.MENU,
-        element: <FoodPage />,
+        element: <MenuPage />,
       },
       {
         path: PATH.ABOUT,

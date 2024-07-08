@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const FoodPageContainer = styled.div<{
+export const MenuPageContainer = styled.div<{
   direction?: 'to-left' | 'to-right';
 }>`
   padding: 16px;

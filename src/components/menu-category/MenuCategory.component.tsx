@@ -18,7 +18,6 @@ export const MenuCategory = ({
   items,
   additions,
 }: MenuCategoryProps) => {
-  console.log({ additions });
   return (
     <Styled.MenuCategoryContainer id={sectionId} className={className}>
       <h2 className="section-title">{title}</h2>

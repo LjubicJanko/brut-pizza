@@ -8,9 +8,9 @@ import {
   MenuCategory,
   MenuCategoryProps,
 } from '../../components/menu-category/MenuCategory.component';
-import * as Styled from './Food.styles';
+import * as Styled from './Menu.styles';
 
-const FoodPage = () => {
+const MenuPage = () => {
   const { t } = useTranslation();
   const { hash } = useLocation();
   const nodeRef = useRef(null);
@@ -61,7 +61,7 @@ const FoodPage = () => {
   const [direction, setDirection] = useState<'to-left' | 'to-right'>('to-left');
 
   return (
-    <Styled.FoodPageContainer direction={direction}>
+    <Styled.MenuPageContainer direction={direction}>
       <BrutTabs
         activeTab={activeTab}
         setActiveTab={(tab) => {
@@ -82,8 +82,8 @@ const FoodPage = () => {
           </div>
         </CSSTransition>
       </TransitionGroup>
-    </Styled.FoodPageContainer>
+    </Styled.MenuPageContainer>
   );
 };
 
-export default FoodPage;
+export default MenuPage;
