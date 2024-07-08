@@ -2,26 +2,17 @@ import { tabsClasses } from '@mui/material/Tabs';
 import { t } from 'i18next';
 import * as Styled from './BrutTabs.styles';
 
-export type TabName = 'pizza' | 'sandwiches' | 'pancakes' | 'drinks';
-
 export type BrutTabsProps = {
-  activeTab: TabName;
-  setActiveTab: (tab: TabName) => void;
+  activeTab: number;
+  setActiveTab: (tab: number) => void;
 };
-
-const tabNamesOrderMap: TabName[] = [
-  'pizza',
-  'sandwiches',
-  'pancakes',
-  'drinks',
-];
 
 export const BrutTabs = ({ activeTab, setActiveTab }: BrutTabsProps) => {
   return (
     <Styled.BrutTabsContainer
-      value={tabNamesOrderMap.indexOf(activeTab)}
+      value={activeTab}
       onChange={(_e, index) => {
-        setActiveTab(tabNamesOrderMap[index]);
+        setActiveTab(index);
       }}
       className="tabs"
       sx={{

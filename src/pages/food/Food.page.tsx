@@ -1,67 +1,75 @@
-import { useState } from 'react';
+import { useMemo, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useLocation } from 'react-router-dom';
+import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import menuData from '../../../public/data/menu.json';
-import {
-  BrutTabs,
-  TabName,
-} from '../../components/brut-tabs/BrutTabs.component';
+import { BrutTabs } from '../../components/brut-tabs/BrutTabs.component';
 import {
   MenuCategory,
   MenuCategoryProps,
 } from '../../components/menu-category/MenuCategory.component';
 import * as Styled from './Food.styles';
-import { CSSTransition, TransitionGroup } from 'react-transition-group';
 
 const FoodPage = () => {
   const { t } = useTranslation();
   const { hash } = useLocation();
 
-  const [activeTab, setActiveTab] = useState<TabName>(
-    (hash.substring(1) as TabName) || 'pizza'
+  const foodCatogriesOrder: MenuCategoryProps[] = useMemo(
+    () => [
+      {
+        sectionId: 'pizza',
+        className: 'pizza',
+        title: t('pizza'),
+        items: menuData.pizza,
+        subtitle: t('additions'),
+        additions: menuData.pizza_additions,
+      },
+      {
+        sectionId: 'sandwiches',
+        className: 'sandwiches',
+        title: t('sandwiches'),
+        items: menuData.sandwiches,
+      },
+      {
+        sectionId: 'pancakes',
+        className: 'pancakes',
+        title: t('pancakes'),
+        items: menuData.pancakes,
+        subtitle: t('additions'),
+        additions: menuData.pancakes_additions,
+      },
+      {
+        sectionId: 'drinks',
+        className: 'drinks',
+        title: t('drinks'),
+        items: menuData.drinks,
+      },
+    ],
+    [t]
   );
 
-  const foodMap: Record<TabName, MenuCategoryProps> = {
-    pizza: {
-      sectionId: 'pizza',
-      className: 'pizza',
-      title: t('pizza'),
-      items: menuData.pizza,
-      subtitle: t('additions'),
-      additions: menuData.pizza_additions,
-    },
-    sandwiches: {
-      sectionId: 'sandwiches',
-      className: 'sandwiches',
-      title: t('sandwiches'),
-      items: menuData.sandwiches,
-    },
-    pancakes: {
-      sectionId: 'pancakes',
-      className: 'pancakes',
-      title: t('pancakes'),
-      items: menuData.pancakes,
-      subtitle: t('additions'),
-      additions: menuData.pancakes_additions,
-    },
-    drinks: {
-      sectionId: 'drinks',
-      className: 'drinks',
-      title: t('drinks'),
-      items: menuData.drinks,
-    },
-  };
+  const [activeTab, setActiveTab] = useState<number>(
+    foodCatogriesOrder.findIndex((x) => x.sectionId === hash.substring(1)) || 0
+  );
+  const [transitionDirection, setTransitionDirection] = useState<
+    'to-left' | 'to-right'
+  >('to-left');
 
   return (
-    <Styled.FoodPageContainer>
-      <BrutTabs activeTab={activeTab} setActiveTab={setActiveTab} />
+    <Styled.FoodPageContainer transitionDirection={transitionDirection}>
+      <BrutTabs
+        activeTab={activeTab}
+        setActiveTab={(tab) => {
+          setTransitionDirection(tab > activeTab ? 'to-left' : 'to-right');
+          setActiveTab(tab);
+        }}
+      />
       <div className="divider" />
       <TransitionGroup>
-        <CSSTransition key={activeTab} timeout={300} classNames="fade">
-          <MenuCategory {...foodMap[activeTab]} />
+        <CSSTransition key={activeTab} timeout={300} classNames="slide">
+          <MenuCategory {...foodCatogriesOrder[activeTab]} />
         </CSSTransition>
       </TransitionGroup>
-      {/* <MenuCategory {...foodMap[activeTab]} /> */}
     </Styled.FoodPageContainer>
   );
 };

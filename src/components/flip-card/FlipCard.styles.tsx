@@ -4,7 +4,6 @@ interface CardInnerProps {
   isFlipped: boolean;
 }
 
-// Define common styles
 const cardStyles = css`
   width: 100%;
   min-height: 250px;

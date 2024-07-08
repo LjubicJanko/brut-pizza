@@ -1,6 +1,10 @@
 import styled from 'styled-components';
 
-export const FoodPageContainer = styled.div`
+interface FoodPageContainerProps {
+  transitionDirection: 'to-left' | 'to-right';
+}
+
+export const FoodPageContainer = styled.div<FoodPageContainerProps>`
   padding: 16px;
   padding-top: 75px;
   height: 100%;
@@ -25,21 +29,24 @@ export const FoodPageContainer = styled.div`
     );
   }
 
-  .fade-enter {
-    opacity: 0;
+  .slide-enter {
+    transform: ${({ transitionDirection }) =>
+      transitionDirection === 'to-right'
+        ? ' translateX(-100%)'
+        : ' translateX(100%)'};
   }
 
-  .fade-enter-active {
-    opacity: 1;
-    transition: opacity 300ms;
+  .slide-enter-active {
+    transform: translateX(0%);
+    transition: transform 300ms ease-in-out;
   }
 
-  .fade-exit {
-    opacity: 1;
+  .slide-exit {
+    transform: translateX(0%);
   }
 
-  .fade-exit-active {
-    opacity: 0;
-    transition: opacity 300ms;
+  .slide-exit-active {
+    transform: translateX(+100%);
+    transition: transform 300ms ease-in-out;
   }
 `;
