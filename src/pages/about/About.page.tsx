@@ -7,7 +7,7 @@ const AboutPage = () => {
     <Styled.AboutPageContainer>
       <Link to={PATH.HOME}>GO TO HOME</Link>
       <br></br>
-      about
+      ABOUT
     </Styled.AboutPageContainer>
   );
 };

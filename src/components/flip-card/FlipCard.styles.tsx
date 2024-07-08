@@ -1,9 +1,5 @@
 import styled, { css } from 'styled-components';
 
-interface CardInnerProps {
-  isFlipped: boolean;
-}
-
 const cardStyles = css`
   width: 100%;
   min-height: 250px;
@@ -25,14 +21,14 @@ export const FlipCardContainer = styled.div`
   position: relative;
 `;
 
-export const CardInner = styled.div<CardInnerProps>`
+export const CardInner = styled.div<{ $flipped: string }>`
   width: 100%;
   height: 100%;
   position: absolute;
   transform-style: preserve-3d;
   transition: transform 0.6s;
-  transform: ${({ isFlipped }) =>
-    isFlipped ? 'rotateY(180deg)' : 'rotateY(0)'};
+  transform: ${({ $flipped }) =>
+    $flipped === 'true' ? 'rotateY(180deg)' : 'rotateY(0)'};
 `;
 
 export const CardFront = styled.div`

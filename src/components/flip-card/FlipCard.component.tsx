@@ -8,22 +8,22 @@ export type FlipCardProps = {
 };
 
 export const FlipCard = ({ front, back }: FlipCardProps) => {
-  const [isFlipped, setIsFlipped] = useState(false);
+  const [flipped, setFlipped] = useState(false);
   const flipCardRef = useRef<HTMLDivElement>(null);
 
   const handleCardClick = useCallback(() => {
-    setIsFlipped(true);
+    setFlipped(true);
   }, []);
 
   useClickListener<HTMLDivElement>(
     flipCardRef,
-    () => setIsFlipped(false),
-    isFlipped
+    () => setFlipped(false),
+    flipped
   );
 
   return (
     <Styled.FlipCardContainer ref={flipCardRef} onClick={handleCardClick}>
-      <Styled.CardInner isFlipped={isFlipped}>
+      <Styled.CardInner $flipped={flipped.toString()}>
         <Styled.CardFront>{front}</Styled.CardFront>
         <Styled.CardBack>{back}</Styled.CardBack>
       </Styled.CardInner>

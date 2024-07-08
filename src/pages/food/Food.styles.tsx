@@ -1,10 +1,8 @@
 import styled from 'styled-components';
 
-interface FoodPageContainerProps {
-  transitionDirection: 'to-left' | 'to-right';
-}
-
-export const FoodPageContainer = styled.div<FoodPageContainerProps>`
+export const FoodPageContainer = styled.div<{
+  direction?: 'to-left' | 'to-right';
+}>`
   padding: 16px;
   padding-top: 75px;
   height: 100%;
@@ -30,10 +28,8 @@ export const FoodPageContainer = styled.div<FoodPageContainerProps>`
   }
 
   .slide-enter {
-    transform: ${({ transitionDirection }) =>
-      transitionDirection === 'to-right'
-        ? ' translateX(-100%)'
-        : ' translateX(100%)'};
+    transform: ${({ direction }) =>
+      direction === 'to-right' ? ' translateX(-100%)' : ' translateX(100%)'};
   }
 
   .slide-enter-active {
@@ -41,12 +37,4 @@ export const FoodPageContainer = styled.div<FoodPageContainerProps>`
     transition: transform 300ms ease-in-out;
   }
 
-  .slide-exit {
-    transform: translateX(0%);
-  }
-
-  .slide-exit-active {
-    transform: translateX(+100%);
-    transition: transform 300ms ease-in-out;
-  }
 `;

@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react';
+import { useMemo, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useLocation } from 'react-router-dom';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
@@ -13,6 +13,7 @@ import * as Styled from './Food.styles';
 const FoodPage = () => {
   const { t } = useTranslation();
   const { hash } = useLocation();
+  const nodeRef = useRef(null);
 
   const foodCatogriesOrder: MenuCategoryProps[] = useMemo(
     () => [
@@ -48,26 +49,37 @@ const FoodPage = () => {
     [t]
   );
 
-  const [activeTab, setActiveTab] = useState<number>(
-    foodCatogriesOrder.findIndex((x) => x.sectionId === hash.substring(1)) || 0
-  );
-  const [transitionDirection, setTransitionDirection] = useState<
-    'to-left' | 'to-right'
-  >('to-left');
+  const initialyActiveTab = useMemo(() => {
+    const hashActivityIndex = foodCatogriesOrder.findIndex(
+      (x) => x.sectionId === hash.substring(1)
+    );
+
+    return hashActivityIndex !== -1 ? hashActivityIndex : 0;
+  }, [foodCatogriesOrder, hash]);
+
+  const [activeTab, setActiveTab] = useState<number>(initialyActiveTab);
+  const [direction, setDirection] = useState<'to-left' | 'to-right'>('to-left');
 
   return (
-    <Styled.FoodPageContainer transitionDirection={transitionDirection}>
+    <Styled.FoodPageContainer direction={direction}>
       <BrutTabs
         activeTab={activeTab}
         setActiveTab={(tab) => {
-          setTransitionDirection(tab > activeTab ? 'to-left' : 'to-right');
+          setDirection(tab > activeTab ? 'to-left' : 'to-right');
           setActiveTab(tab);
         }}
       />
       <div className="divider" />
       <TransitionGroup>
-        <CSSTransition key={activeTab} timeout={300} classNames="slide">
-          <MenuCategory {...foodCatogriesOrder[activeTab]} />
+        <CSSTransition
+          key={activeTab}
+          timeout={300}
+          classNames="slide"
+          nodeRef={nodeRef}
+        >
+          <div ref={nodeRef}>
+            <MenuCategory {...foodCatogriesOrder[activeTab]} />
+          </div>
         </CSSTransition>
       </TransitionGroup>
     </Styled.FoodPageContainer>

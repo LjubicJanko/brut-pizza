@@ -18,19 +18,20 @@ export const MenuCategory = ({
   items,
   additions,
 }: MenuCategoryProps) => {
+  console.log({ additions });
   return (
     <Styled.MenuCategoryContainer id={sectionId} className={className}>
       <h2 className="section-title">{title}</h2>
       <div className="section-items">
-        {items.map((item, index) => (
+        {items?.map((item, index) => (
           <MenuItem key={index} {...item} />
         ))}
       </div>
-      {additions && (
+      {!!additions && (
         <>
           <h2 className="section-subtitle">{subtitle}</h2>
           <div className="section-additions">
-            {additions.map((addition, index) => (
+            {additions?.map((addition, index) => (
               <MenuItem
                 key={index}
                 className="section-additions-item"
