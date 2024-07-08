@@ -27,7 +27,7 @@ export const MenuCategoryContainer = styled.div`
   }
 
   .section-title {
-    font-size: 22px;
+    font-size: 32px;
     color: var(--color-white);
   }
 

@@ -2,7 +2,7 @@ import MenuItem, { MenuItemType } from '../menu-item/MenuItem.component';
 import * as Styled from './MenuCategory.styles';
 
 export type MenuCategoryProps = {
-  sectionId?: string;
+  sectionId: string;
   className?: string;
   title: string;
   subtitle?: string;
