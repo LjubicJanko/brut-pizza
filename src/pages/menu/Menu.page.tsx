@@ -62,6 +62,9 @@ const MenuPage = () => {
 
   return (
     <Styled.MenuPageContainer direction={direction}>
+      <div className="page-header">
+        <h1>{t('menu')}</h1>
+      </div>
       <BrutTabs
         activeTab={activeTab}
         setActiveTab={(tab) => {

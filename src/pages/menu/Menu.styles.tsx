@@ -12,6 +12,17 @@ export const MenuPageContainer = styled.div<{
   flex-direction: column;
   gap: 48px;
 
+  .page-header {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('/flag.jpg');
+    background-size: cover;
+    font-size: 18px;
+  }
+
   .divider {
     background: var(--color-white);
     position: relative;
@@ -36,5 +47,4 @@ export const MenuPageContainer = styled.div<{
     transform: translateX(0%);
     transition: transform 300ms ease-in-out;
   }
-
 `;
