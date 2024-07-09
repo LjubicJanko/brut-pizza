@@ -21,4 +21,18 @@ export const AboutPageContainer = styled.div`
     font-size: 18px;
     color: var(--color-background-2);
   }
+
+  .address {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .address-label {
+      font-size: 22px;
+    }
+    .address-name {
+      font-size: 18px;
+    }
+  }
 `;
