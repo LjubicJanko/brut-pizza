@@ -12,6 +12,7 @@ const cardStyles = css`
   top: 0;
   left: 0;
   transition: transform 0.6s;
+  border-radius: 25px;
 `;
 
 export const FlipCardContainer = styled.div`
@@ -37,6 +38,7 @@ export const CardFront = styled.div`
   color: var(--color-white);
   img {
     width: 300px;
+    border-radius: 20px;
   }
 `;
 

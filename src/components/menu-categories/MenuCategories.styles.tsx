@@ -27,7 +27,6 @@ export const MenuCategoriesContainer = styled.div`
   }
 
   .check-offer-btn {
-    /* border: 1px solid white; */
     font-size: 16px;
     color: var(--color-white);
     border-color: var(--color-white);
