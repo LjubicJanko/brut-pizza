@@ -3,14 +3,9 @@ import styled from 'styled-components';
 export const MenuPageContainer = styled.div<{
   direction?: 'to-left' | 'to-right';
 }>`
-  padding: 16px;
   padding-top: 75px;
   height: 100%;
   background-color: var(--color-background-2);
-
-  display: flex;
-  flex-direction: column;
-  gap: 48px;
 
   .page-header {
     width: 100%;
@@ -21,30 +16,40 @@ export const MenuPageContainer = styled.div<{
     background-image: url('/flag.jpg');
     background-size: cover;
     font-size: 18px;
-  }
 
-  .divider {
-    background: var(--color-white);
-    position: relative;
-    height: 1px;
-    background: linear-gradient(
-      90deg,
-      var(--color-green) 0%,
-      var(--color-green) 33%,
-      var(--color-white) 33%,
-      var(--color-white) 66%,
-      var(--color-red) 66%,
-      var(--color-red) 100%
-    );
+    h1 {
+      font-family: Andika;
+    }
   }
+  .page-content {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    padding: 16px;
 
-  .slide-enter {
-    transform: ${({ direction }) =>
-      direction === 'to-right' ? ' translateX(-100%)' : ' translateX(100%)'};
-  }
+    .divider {
+      background: var(--color-white);
+      position: relative;
+      height: 1px;
+      background: linear-gradient(
+        90deg,
+        var(--color-green) 0%,
+        var(--color-green) 33%,
+        var(--color-white) 33%,
+        var(--color-white) 66%,
+        var(--color-red) 66%,
+        var(--color-red) 100%
+      );
+    }
 
-  .slide-enter-active {
-    transform: translateX(0%);
-    transition: transform 300ms ease-in-out;
+    .slide-enter {
+      transform: ${({ direction }) =>
+        direction === 'to-right' ? ' translateX(-100%)' : ' translateX(100%)'};
+    }
+
+    .slide-enter-active {
+      transform: translateX(0%);
+      transition: transform 300ms ease-in-out;
+    }
   }
 `;

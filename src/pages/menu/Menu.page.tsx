@@ -65,26 +65,28 @@ const MenuPage = () => {
       <div className="page-header">
         <h1>{t('menu')}</h1>
       </div>
-      <BrutTabs
-        activeTab={activeTab}
-        setActiveTab={(tab) => {
-          setDirection(tab > activeTab ? 'to-left' : 'to-right');
-          setActiveTab(tab);
-        }}
-      />
-      <div className="divider" />
-      <TransitionGroup>
-        <CSSTransition
-          key={activeTab}
-          timeout={300}
-          classNames="slide"
-          nodeRef={nodeRef}
-        >
-          <div ref={nodeRef}>
-            <MenuCategory {...foodCatogriesOrder[activeTab]} />
-          </div>
-        </CSSTransition>
-      </TransitionGroup>
+      <div className='page-content'>
+        <BrutTabs
+          activeTab={activeTab}
+          setActiveTab={(tab) => {
+            setDirection(tab > activeTab ? 'to-left' : 'to-right');
+            setActiveTab(tab);
+          }}
+        />
+        <div className="divider" />
+        <TransitionGroup>
+          <CSSTransition
+            key={activeTab}
+            timeout={300}
+            classNames="slide"
+            nodeRef={nodeRef}
+          >
+            <div ref={nodeRef}>
+              <MenuCategory {...foodCatogriesOrder[activeTab]} />
+            </div>
+          </CSSTransition>
+        </TransitionGroup>
+      </div>
     </Styled.MenuPageContainer>
   );
 };

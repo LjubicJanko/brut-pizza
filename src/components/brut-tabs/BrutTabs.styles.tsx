@@ -16,6 +16,8 @@ export const BrutTabContainer = styled(Tab)`
   overflow: unset;
   font-weight: 500;
 
+  font-family: 'Andika';
+
   &:hover::before {
     background-color: rgba(41, 40, 40, 0.04);
   }
