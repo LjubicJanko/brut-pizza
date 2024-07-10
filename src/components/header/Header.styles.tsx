@@ -17,11 +17,8 @@ export const HeaderContainer = styled.header`
     position: absolute;
     top: 25px;
     display: flex;
-    width: 150px;
+    width: 111px;
     border-radius: 50%;
-    @media (max-width: 767px) {
-      width: 111px;
-    }
   }
 `;
 
