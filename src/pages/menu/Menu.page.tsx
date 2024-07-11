@@ -9,6 +9,7 @@ import {
   MenuCategoryProps,
 } from '../../components/menu-category/MenuCategory.component';
 import * as Styled from './Menu.styles';
+import Divider from '../../components/divider/Divider.component';
 
 const MenuPage = () => {
   const { t } = useTranslation();
@@ -65,7 +66,7 @@ const MenuPage = () => {
       <div className="page-header">
         <h1>{t('menu')}</h1>
       </div>
-      <div className='page-content'>
+      <div className="page-content">
         <BrutTabs
           activeTab={activeTab}
           setActiveTab={(tab) => {
@@ -73,7 +74,7 @@ const MenuPage = () => {
             setActiveTab(tab);
           }}
         />
-        <div className="divider" />
+        <Divider />
         <TransitionGroup>
           <CSSTransition
             key={activeTab}

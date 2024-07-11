@@ -14,9 +14,17 @@ export const FooterContainer = styled.footer`
     margin: 8px;
   }
 
-  .contact-phone {
+  /* .contact-phone {
     display: flex;
     align-items: center;
+    background-color: var(--color-red);
+    border-radius: 5px;
+    padding: 8px;
     gap: 8px;
-  }
+
+    a {
+      text-decoration: none;
+      color: var(--color-white);
+    }
+  } */
 `;

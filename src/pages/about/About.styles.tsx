@@ -43,8 +43,8 @@ export const AboutPageContainer = styled.div`
     .contact {
       display: flex;
       flex-direction: column;
-      margin-top: 16px;
-      margin-bottom: 16px;
+      margin-top: 32px;
+      margin-bottom: 32px;
       gap: 16px;
 
       .look-on-map {
@@ -72,19 +72,11 @@ export const AboutPageContainer = styled.div`
           font-size: 16px;
         }
       }
-
-      .contact-phone {
-        display: flex;
-        align-items: center;
-        gap: 8px;
-        color: #1976d2;
-        a {
-          color: #1976d2;
-        }
-      }
     }
 
     .business-hours {
+      margin-top: 32px;
+      margin-bottom: 32px;
       .business-hours-row {
         display: grid;
         grid-template-columns: min-content 1fr;

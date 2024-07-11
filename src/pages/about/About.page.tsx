@@ -1,10 +1,11 @@
+import InstagramIcon from '@mui/icons-material/Instagram';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import { IconButton } from '@mui/material';
-import { useTranslation } from 'react-i18next';
-import * as Styled from './About.styles';
 import { useMemo } from 'react';
-import PhoneIcon from '@mui/icons-material/Phone';
-import InstagramIcon from '@mui/icons-material/Instagram';
+import { useTranslation } from 'react-i18next';
+import { Phone } from '../../components/phone/Phone.component';
+import * as Styled from './About.styles';
+import Divider from '../../components/divider/Divider.component';
 
 const AboutPage = () => {
   const { t } = useTranslation();
@@ -58,14 +59,9 @@ const AboutPage = () => {
             <InstagramIcon />
             <p>{t('instagram')}</p>
           </IconButton>
-          <div className="contact-phone">
-            <PhoneIcon />
-            {t('delivery')}
-            <a href={`tel:+381652776607`} className="phone-link">
-              +381652776607
-            </a>
-          </div>
+          <Phone withNumber />
         </div>
+        <Divider />
         <div className="business-hours">
           {Object.entries(businessHours).map(([day, hours]) => (
             <div key={day} className="business-hours-row">

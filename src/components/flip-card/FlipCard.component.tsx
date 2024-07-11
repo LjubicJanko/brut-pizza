@@ -12,7 +12,7 @@ export const FlipCard = ({ front, back }: FlipCardProps) => {
   const flipCardRef = useRef<HTMLDivElement>(null);
 
   const handleCardClick = useCallback(() => {
-    setFlipped(true);
+    setFlipped((old) => !old);
   }, []);
 
   useClickListener<HTMLDivElement>(
