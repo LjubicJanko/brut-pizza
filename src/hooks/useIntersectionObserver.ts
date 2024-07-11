@@ -1,6 +1,9 @@
 import { useEffect, useState, useRef, MutableRefObject } from 'react';
 
-function useIntersectionObserver(): [MutableRefObject<HTMLDivElement | null>, boolean] {
+function useIntersectionObserver(): [
+  MutableRefObject<HTMLDivElement | null>,
+  boolean
+] {
   const [isVisible, setIsVisible] = useState(false);
   const ref = useRef<HTMLDivElement | null>(null);
 
@@ -8,11 +11,17 @@ function useIntersectionObserver(): [MutableRefObject<HTMLDivElement | null>, bo
     const currentRef = ref.current;
 
     const observer = new IntersectionObserver(
-      ([entry]) => {
-        setIsVisible(entry.isIntersecting);
+      (entries) => {
+        const [entry] = entries;
+
+        if (entry.intersectionRatio > 0.15) {
+          setIsVisible(true);
+        } else if (entry.intersectionRatio < 0.1) {
+          setIsVisible(false);
+        }
       },
       {
-        threshold: 0.15, // Adjust threshold as needed
+        threshold: [0.1, 0.15],
       }
     );
 
