@@ -19,6 +19,7 @@ export const MenuPageContainer = styled.div<{
 
     h1 {
       font-family: Andika;
+      font-weight: 300;
     }
   }
   .page-content {
