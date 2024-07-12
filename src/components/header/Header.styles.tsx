@@ -17,7 +17,6 @@ export const HeaderContainer = styled.header`
     position: absolute;
     top: 10px;
     display: flex;
-    /* width: 145px; */
   }
 `;
 
