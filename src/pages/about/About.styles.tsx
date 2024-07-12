@@ -15,6 +15,11 @@ export const AboutPageContainer = styled.div`
     background-size: cover;
     font-size: 18px;
     color: var(--color-background-2);
+
+    h1 {
+      font-family: Andika;
+      font-weight: 300;
+    }
   }
 
   .page-content {

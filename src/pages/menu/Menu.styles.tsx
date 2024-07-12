@@ -7,6 +7,17 @@ export const MenuPageContainer = styled.div<{
   height: 100%;
   background-color: var(--color-background-2);
 
+  .sizes {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+
+    div {
+      flex: 1;
+    }
+  }
+
   .page-header {
     width: 100%;
     height: 80px;
@@ -22,6 +33,7 @@ export const MenuPageContainer = styled.div<{
       font-weight: 300;
     }
   }
+
   .page-content {
     display: flex;
     flex-direction: column;

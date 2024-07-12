@@ -16,6 +16,8 @@ export const MenuItemContainer = styled.div`
     justify-content: space-between;
     align-items: center;
     .name {
+      text-align: left;
+      width: fit-content;
       max-width: 80%;
       font-size: 18px;
       color: var(--color-green);
@@ -30,7 +32,9 @@ export const MenuItemContainer = styled.div`
       height: 0;
     }
     .price {
+      text-align: right;
       font-size: 16px;
+      white-space: nowrap;
       color: var(--color-red);
     }
   }

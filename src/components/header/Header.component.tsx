@@ -53,7 +53,9 @@ const Header = () => {
       <Styled.HeaderContainer>
         <img
           className="brut-logo"
-          src={'brut.jpg'}
+          // src={'brut.jpg'}
+          src={'Brut_manji.png'}
+
           alt="brut-logo"
           loading="lazy"
           onClick={() => navigate(PATH.HOME)}
@@ -92,17 +94,39 @@ const Header = () => {
                 </Link>
               </li>
             ))}
-            <li>
-              <img
-                onClick={() => changeLanguage('en')}
-                className={classNames('flag', {
-                  'flag--selected': selectedLanguage === 'en',
-                })}
-                src="/en.png"
-                alt="english"
-              />
+            <li className="hamburger-menu__content__list__item--languages">
+              <div onClick={() => changeLanguage('en')}>
+                <img
+                  className={classNames('flag', {
+                    'flag--selected': selectedLanguage === 'en',
+                  })}
+                  src="/en.png"
+                  alt="english"
+                />
+                <p>english</p>
+              </div>
+              <div onClick={() => changeLanguage('rs')}>
+                <img
+                  className={classNames('flag', {
+                    'flag--selected': selectedLanguage === 'rs',
+                  })}
+                  src="/rs.png"
+                  alt="serbian"
+                />
+                <p>ћирилица</p>
+              </div>
+              <div onClick={() => changeLanguage('rs_lt')}>
+                <img
+                  className={classNames('flag', {
+                    'flag--selected': selectedLanguage === 'rs_lt',
+                  })}
+                  src="/rs.png"
+                  alt="english"
+                />
+                <p>latinica</p>
+              </div>
             </li>
-            <li>
+            {/* <li>
               <img
                 onClick={() => changeLanguage('rs')}
                 className={classNames('flag', {
@@ -111,7 +135,19 @@ const Header = () => {
                 src="/rs.png"
                 alt="serbian"
               />
+              <p>ћирилица</p>
             </li>
+            <li>
+              <img
+                onClick={() => changeLanguage('rs_lt')}
+                className={classNames('flag', {
+                  'flag--selected': selectedLanguage === 'rs_lt',
+                })}
+                src="/rs.png"
+                alt="english"
+              />
+              <p>latinica</p>
+            </li> */}
           </ul>
         </div>
       </Styled.HamburgerMenu>

@@ -16,6 +16,26 @@ const MenuPage = () => {
   const { hash } = useLocation();
   const nodeRef = useRef(null);
 
+  const pizzaSizes = useMemo(
+    () => (
+      <div className="sizes">
+        <div className="small">
+          <p className="label">{t('small')}</p>
+          <p>26{t('cm')}</p>
+        </div>
+        <div className="large">
+          <p className="label">{t('large')}</p>
+          <p>32{t('cm')}</p>
+        </div>
+        <div className="xlarge">
+          <p className="label">{t('xlarge')}</p>
+          <p>50{t('cm')}</p>
+        </div>
+      </div>
+    ),
+    [t]
+  );
+
   const foodCatogriesOrder: MenuCategoryProps[] = useMemo(
     () => [
       {
@@ -25,6 +45,7 @@ const MenuPage = () => {
         items: menuData.pizza,
         subtitle: t('additions'),
         additions: menuData.pizza_additions,
+        heading: pizzaSizes,
       },
       {
         sectionId: 'sandwiches',
@@ -47,7 +68,7 @@ const MenuPage = () => {
         items: menuData.drinks,
       },
     ],
-    [t]
+    [pizzaSizes, t]
   );
 
   const initialyActiveTab = useMemo(() => {
