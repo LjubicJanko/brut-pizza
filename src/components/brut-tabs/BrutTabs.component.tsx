@@ -44,6 +44,11 @@ export const BrutTabs = ({ activeTab, setActiveTab }: BrutTabsProps) => {
         label={t('drinks')}
         className="drinks-tab"
       />
+      <Styled.BrutTabContainer
+        disableRipple
+        label={t('actions')}
+        className="actions-tab"
+      />
     </Styled.BrutTabsContainer>
   );
 };

@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 
 export const DividerContainer = styled.div`
-  background: var(--color-white);
   position: relative;
   height: 1px;
+  width: 100%;
   background: linear-gradient(
     90deg,
     var(--color-green) 0%,

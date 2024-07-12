@@ -1,4 +1,3 @@
-
 :root {
   --e-global-color-primary: #7b0023;
   --e-global-color-secondary: #690620;
@@ -9,6 +8,7 @@
   --color-green: #008c45;
   --color-white: #f4f9ff;
   --color-red: #cd212a;
+  --color-blue: #1976d2;
 }
 
 #root {

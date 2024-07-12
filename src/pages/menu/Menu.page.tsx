@@ -67,6 +67,12 @@ const MenuPage = () => {
         title: t('drinks'),
         items: menuData.drinks,
       },
+      {
+        sectionId: 'actions',
+        className: 'actions',
+        title: t('actions'),
+        items: menuData.actions,
+      },
     ],
     [pizzaSizes, t]
   );

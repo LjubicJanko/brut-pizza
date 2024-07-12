@@ -1,4 +1,14 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
+
+const nameStyle = css`
+  .name {
+    text-align: left;
+    width: fit-content;
+    max-width: 80%;
+    font-size: 18px;
+    color: var(--color-green);
+  }
+`;
 
 export const MenuItemContainer = styled.div`
   display: flex;
@@ -10,18 +20,36 @@ export const MenuItemContainer = styled.div`
     border-radius: 15%;
   }
 
+  &.action {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 200px;
+    ${nameStyle};
+    .name {
+      width: 100%;
+      font-size: 28px;
+      text-align: center;
+    }
+    .old-price {
+      text-decoration: line-through;
+      margin-right: 8px;
+      color: var(--color-red);
+    }
+    .price {
+      font-size: 32px;
+    }
+    .action-divider {
+      margin-top: 32px;
+    }
+  }
   .name-and-price {
     display: flex;
     width: 100%;
     justify-content: space-between;
     align-items: center;
-    .name {
-      text-align: left;
-      width: fit-content;
-      max-width: 80%;
-      font-size: 18px;
-      color: var(--color-green);
-    }
+    ${nameStyle};
+
     .separator {
       border-bottom-style: dashed;
       border-bottom-width: 2px;
@@ -31,6 +59,7 @@ export const MenuItemContainer = styled.div`
       flex-grow: 1;
       height: 0;
     }
+
     .price {
       text-align: right;
       font-size: 16px;
@@ -44,6 +73,4 @@ export const MenuItemContainer = styled.div`
     color: var(--color-white);
     text-align: left;
   }
-
-  /* border: 1px solid var(--color-white); */
 `;

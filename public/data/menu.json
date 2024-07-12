@@ -416,5 +416,31 @@
       "price": "150",
       "ingredients": ""
     }
+  ],
+  "actions": [
+    {
+      "imgSrc": "",
+      "name": "menu-actions-carbonara",
+      "price": "1500",
+      "oldPrice": "1760",
+      "ingredients": "",
+      "isAction": "true"
+    },
+    {
+      "imgSrc": "",
+      "name": "menu-actions-corizo",
+      "price": "1900",
+      "oldPrice": "2160",
+      "ingredients": "",
+      "isAction": "true"
+    },
+    {
+      "imgSrc": "",
+      "name": "menu-actions-parce",
+      "price": "360",
+      "oldPrice": "430",
+      "ingredients": "",
+      "isAction": "true"
+    }
   ]
 }

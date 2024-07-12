@@ -1,7 +1,11 @@
-import * as Styled from './Divider.styles'
+import * as Styled from './Divider.styles';
 
-const Divider = () => {
-  return <Styled.DividerContainer />;
+export type DividerProps = {
+  className?: string;
+};
+
+const Divider = ({ className }: DividerProps) => {
+  return <Styled.DividerContainer className={className} />;
 };
 
 export default Divider;

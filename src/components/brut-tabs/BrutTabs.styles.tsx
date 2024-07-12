@@ -38,12 +38,15 @@ export const BrutTabContainer = styled(Tab)`
     color: var(--color-green);
   }
   &.sandwiches-tab {
-    color: var(--color-white);
+    color: var(--color-blue);
   }
   &.pancakes-tab {
-    color: var(--color-red);
+    color: var(--color-white);
   }
   &.drinks-tab {
-    color: #1976d2;
+    color: var(--color-blue);
+  }
+  &.actions-tab {
+    color: var(--color-red);
   }
 `;
