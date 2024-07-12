@@ -1,9 +1,16 @@
 import styled from 'styled-components';
 
 export const MenuCategoriesContainer = styled.div`
+  @font-face {
+    font-family: 'My-Andika';
+    src: url('../../fonts/Andika-Regular.ttf') format('truetype');
+    font-display: swap;
+  }
+
   display: flex;
   flex-direction: column;
   gap: 32px;
+  font-family: My-Andika;
 
   @media (min-width: 767px) {
     display: grid;
