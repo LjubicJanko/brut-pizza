@@ -239,13 +239,13 @@
       "ingredients": ""
     },
     {
-      "imgSrc": "/nutela.jpg",
+      "imgSrc": "/nutela_tanjir.png",
       "name": "menu-pancakes-nutela-name",
       "price": "300",
       "ingredients": ""
     },
     {
-      "imgSrc": "/nutela_plazma.jpg",
+      "imgSrc": "/nutela.jpg",
       "name": "menu-pancakes-nutela_plazma-name",
       "price": "310",
       "ingredients": ""
@@ -422,7 +422,7 @@
       "imgSrc": "",
       "name": "menu-actions-carbonara",
       "price": "1500",
-      "oldPrice": "1760",
+      "oldPrice": "1660",
       "ingredients": "",
       "isAction": "true"
     },
@@ -430,7 +430,15 @@
       "imgSrc": "",
       "name": "menu-actions-corizo",
       "price": "1900",
-      "oldPrice": "2160",
+      "oldPrice": "2060",
+      "ingredients": "",
+      "isAction": "true"
+    },
+    {
+      "imgSrc": "",
+      "name": "menu-actions-kapricoza",
+      "price": "1600",
+      "oldPrice": "1760",
       "ingredients": "",
       "isAction": "true"
     },
@@ -438,7 +446,7 @@
       "imgSrc": "",
       "name": "menu-actions-parce",
       "price": "360",
-      "oldPrice": "430",
+      "oldPrice": "380",
       "ingredients": "",
       "isAction": "true"
     }

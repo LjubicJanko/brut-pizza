@@ -122,7 +122,8 @@
   "menu-drinks-aqua_viva-name": "Aqua Viva 0,5",
   "menu-drinks-guarana-name": "Guarana 0,25",
   "menu-drinks-guarana_joker-name": "Guarana Joker 0,25",
-  "menu-actions-carbonara": "Carbonara 50cm + Pepsi 0,33 x 2",
-  "menu-actions-corizo": "Corizo 50cm + Pepsi 0,33 x 2",
+  "menu-actions-carbonara": "Carbonara 50cm + 2 x Pepsi 0,33",
+  "menu-actions-corizo": "Corizo 50cm + 2 x Pepsi 0,33",
+  "menu-actions-kapricoza": "Capricciosa 50cm + Pepsi & Pepsi Max",
   "menu-actions-parce": "Slice + Pepsi 0,33"
 }

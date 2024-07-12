@@ -30,6 +30,8 @@ export const MenuItemContainer = styled.div`
       width: 100%;
       font-size: 28px;
       text-align: center;
+      max-width: unset;
+      word-break: auto-phraze;
     }
     .old-price {
       text-decoration: line-through;
