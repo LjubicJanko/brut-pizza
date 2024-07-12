@@ -24,6 +24,11 @@ export const MenuCategoriesContainer = styled.div`
     justify-content: space-between;
     height: 100%;
     gap: 8px;
+
+    .title {
+      font-family: Andika;
+      font-size: 22px;
+    }
   }
 
   .check-offer-btn {

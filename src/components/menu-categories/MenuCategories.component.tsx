@@ -18,6 +18,11 @@ const MenuCategories = () => {
   const menuCategories: MenuCategoryType[] = useMemo(
     () => [
       {
+        title: 'actions',
+        imageSrc: '/discount.png',
+        to: '/menu#actions',
+      },
+      {
         title: 'pizza',
         imageSrc: '/corizo.jpg',
         to: '/menu#pizza',
@@ -49,7 +54,7 @@ const MenuCategories = () => {
             front={
               <div className="front-inner">
                 <img src={menuCategory.imageSrc} />
-                <p>{t(menuCategory.title)}</p>
+                <p className='title'>{t(menuCategory.title)}</p>
               </div>
             }
             back={
