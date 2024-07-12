@@ -15,10 +15,9 @@ export const HeaderContainer = styled.header`
 
   .brut-logo {
     position: absolute;
-    top: 25px;
+    top: 10px;
     display: flex;
-    /* width: 111px;
-    border-radius: 50%; */
+    /* width: 145px; */
   }
 `;
 

@@ -53,9 +53,7 @@ const Header = () => {
       <Styled.HeaderContainer>
         <img
           className="brut-logo"
-          // src={'brut.jpg'}
-          src={'Brut_manji.png'}
-
+          src={'Brut-smanjen2.svg'}
           alt="brut-logo"
           loading="lazy"
           onClick={() => navigate(PATH.HOME)}
