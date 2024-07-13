@@ -22,7 +22,11 @@ body {
   display: flex;
   min-width: 320px;
   min-height: 100vh;
-  font-family: Andika;
+
+  font-family: 'Alegreya', serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
 }
 
 p {

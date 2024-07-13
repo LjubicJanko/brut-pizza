@@ -17,8 +17,10 @@ export const AboutPageContainer = styled.div`
     color: var(--color-background-2);
 
     h1 {
-      font-family: Andika;
-      font-weight: 300;
+      font-family: 'Alegreya', serif;
+      font-optical-sizing: auto;
+      font-weight: 600;
+      font-style: normal;
     }
   }
 

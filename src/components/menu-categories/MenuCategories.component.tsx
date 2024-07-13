@@ -54,7 +54,7 @@ const MenuCategories = () => {
             front={
               <div className="front-inner">
                 <img src={menuCategory.imageSrc} />
-                <p className='title'>{t(menuCategory.title)}</p>
+                <p className="title">{t(menuCategory.title).toUpperCase()}</p>
               </div>
             }
             back={

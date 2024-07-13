@@ -4,7 +4,6 @@ export const MenuCategoriesContainer = styled.div`
   display: flex;
   flex-direction: column;
   gap: 32px;
-  font-family: Andika;
 
   @media (min-width: 767px) {
     display: grid;
@@ -27,8 +26,12 @@ export const MenuCategoriesContainer = styled.div`
     gap: 8px;
 
     .title {
-      font-family: Andika;
       font-size: 22px;
+
+      font-family: 'Alegreya', serif;
+      font-optical-sizing: auto;
+      font-weight: 300;
+      font-style: normal;
     }
   }
 

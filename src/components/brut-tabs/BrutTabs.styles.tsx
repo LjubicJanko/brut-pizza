@@ -14,9 +14,11 @@ export const BrutTabContainer = styled(Tab)`
   letter-spacing: 0.5px;
   padding: 0;
   overflow: unset;
-  font-weight: 500;
 
-  font-family: 'Andika';
+  font-family: 'Alegreya', serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
 
   &:hover::before {
     background-color: rgba(41, 40, 40, 0.04);
