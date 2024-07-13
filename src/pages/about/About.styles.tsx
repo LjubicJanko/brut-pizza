@@ -5,25 +5,6 @@ export const AboutPageContainer = styled.div`
   background-color: var(--color-background-2);
   color: var(--color-white);
 
-  .page-header {
-    width: 100%;
-    height: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url('/flag.jpg');
-    background-size: cover;
-    font-size: 18px;
-    color: var(--color-background-2);
-
-    h1 {
-      font-family: 'Alegreya', serif;
-      font-optical-sizing: auto;
-      font-weight: 600;
-      font-style: normal;
-    }
-  }
-
   .page-content {
     height: 100%;
     padding: 16px;

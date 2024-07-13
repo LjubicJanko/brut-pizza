@@ -18,24 +18,6 @@ export const MenuPageContainer = styled.div<{
     }
   }
 
-  .page-header {
-    width: 100%;
-    height: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url('/flag.jpg');
-    background-size: cover;
-    font-size: 18px;
-
-    h1 {
-      font-family: 'Alegreya', serif;
-      font-optical-sizing: auto;
-      font-weight: 600;
-      font-style: normal;
-    }
-  }
-
   .page-content {
     display: flex;
     flex-direction: column;

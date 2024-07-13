@@ -6,6 +6,7 @@ import { useTranslation } from 'react-i18next';
 import { Phone } from '../../components/phone/Phone.component';
 import * as Styled from './About.styles';
 import Divider from '../../components/divider/Divider.component';
+import PageHeader from '../../components/page-header/PageHeader.component';
 
 const AboutPage = () => {
   const { t } = useTranslation();
@@ -25,9 +26,7 @@ const AboutPage = () => {
 
   return (
     <Styled.AboutPageContainer>
-      <div className="page-header">
-        <h1>{t('about')}</h1>
-      </div>
+      <PageHeader title={'about'} />
       <div className="page-content">
         <div className="contact">
           <div className="look-on-map">

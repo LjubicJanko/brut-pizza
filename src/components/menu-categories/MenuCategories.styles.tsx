@@ -27,11 +27,6 @@ export const MenuCategoriesContainer = styled.div`
 
     .title {
       font-size: 22px;
-
-      font-family: 'Alegreya', serif;
-      font-optical-sizing: auto;
-      font-weight: 300;
-      font-style: normal;
     }
   }
 
@@ -39,5 +34,10 @@ export const MenuCategoriesContainer = styled.div`
     font-size: 16px;
     color: var(--color-white);
     border-color: var(--color-white);
+
+    font-family: 'Alegreya', serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
   }
 `;

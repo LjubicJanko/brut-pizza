@@ -10,6 +10,7 @@ import {
 } from '../../components/menu-category/MenuCategory.component';
 import * as Styled from './Menu.styles';
 import Divider from '../../components/divider/Divider.component';
+import PageHeader from '../../components/page-header/PageHeader.component';
 
 const MenuPage = () => {
   const { t } = useTranslation();
@@ -90,9 +91,7 @@ const MenuPage = () => {
 
   return (
     <Styled.MenuPageContainer direction={direction}>
-      <div className="page-header">
-        <h1>{t('menu')}</h1>
-      </div>
+      <PageHeader title={'menu'} />
       <div className="page-content">
         <BrutTabs
           activeTab={activeTab}
