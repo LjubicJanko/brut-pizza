@@ -40,6 +40,12 @@ const MenuPage = () => {
   const foodCatogriesOrder: MenuCategoryProps[] = useMemo(
     () => [
       {
+        sectionId: 'actions',
+        className: 'actions',
+        title: t('actions'),
+        items: menuData.actions,
+      },
+      {
         sectionId: 'pizza',
         className: 'pizza',
         title: t('pizza'),
@@ -67,12 +73,6 @@ const MenuPage = () => {
         className: 'drinks',
         title: t('drinks'),
         items: menuData.drinks,
-      },
-      {
-        sectionId: 'actions',
-        className: 'actions',
-        title: t('actions'),
-        items: menuData.actions,
       },
     ],
     [pizzaSizes, t]
