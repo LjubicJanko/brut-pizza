@@ -36,19 +36,19 @@ export const BrutTabContainer = styled(Tab)`
     min-width: 0;
   }
 
-  &.pizza-tab {
+  &.actions-tab {
     color: var(--color-green);
   }
-  &.sandwiches-tab {
+  &.pizza-tab {
     color: var(--color-blue);
   }
-  &.pancakes-tab {
+  &.sandwiches-tab {
     color: var(--color-white);
   }
-  &.drinks-tab {
+  &.pancakes-tab {
     color: var(--color-blue);
   }
-  &.actions-tab {
+  &.drinks-tab {
     color: var(--color-red);
   }
 `;

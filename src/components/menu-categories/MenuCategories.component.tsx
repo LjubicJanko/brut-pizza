@@ -34,12 +34,12 @@ const MenuCategories = () => {
       },
       {
         title: 'pancakes',
-        imageSrc: '/svarcvald.jpg',
+        imageSrc: '/nutela.png',
         to: '/menu#pancakes',
       },
       {
         title: 'drinks',
-        imageSrc: '/drinks.jpg',
+        imageSrc: '/pepsi.png',
         to: '/menu#drinks',
       },
     ],

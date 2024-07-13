@@ -26,6 +26,11 @@ export const BrutTabs = ({ activeTab, setActiveTab }: BrutTabsProps) => {
     >
       <Styled.BrutTabContainer
         disableRipple
+        label={t('actions')}
+        className="actions-tab"
+      />
+      <Styled.BrutTabContainer
+        disableRipple
         label={t('pizza')}
         className="pizza-tab"
       />
@@ -43,11 +48,6 @@ export const BrutTabs = ({ activeTab, setActiveTab }: BrutTabsProps) => {
         disableRipple
         label={t('drinks')}
         className="drinks-tab"
-      />
-      <Styled.BrutTabContainer
-        disableRipple
-        label={t('actions')}
-        className="actions-tab"
       />
     </Styled.BrutTabsContainer>
   );

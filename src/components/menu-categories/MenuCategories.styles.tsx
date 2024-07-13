@@ -13,8 +13,8 @@ export const MenuCategoriesContainer = styled.div`
   }
 
   img {
-    max-width: 100%;
-    max-height: 100%;
+    max-width: 300px;
+    max-height: 200px;
     display: block;
   }
 
