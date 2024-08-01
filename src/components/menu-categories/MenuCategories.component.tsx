@@ -24,12 +24,12 @@ const MenuCategories = () => {
       },
       {
         title: 'pizza',
-        imageSrc: '/pizza/corizo.jpg',
+        imageSrc: '/pizza/corizo.png',
         to: '/menu#pizza',
       },
       {
         title: 'sandwiches',
-        imageSrc: '/sandwiches/sendvic.jpg',
+        imageSrc: '/sandwiches/sendvic.png',
         to: '/menu#sandwiches',
       },
       {
