@@ -9,7 +9,7 @@ i18n
   .use(LanguageDetector)
   .use(initReactI18next)
   .init({
-    fallbackLng: 'rs',
+    fallbackLng: 'rs', // Default language if none is detected
     debug: true,
     backend: {
       loadPath: '/locales/{{lng}}/{{ns}}.json',
@@ -25,14 +25,23 @@ i18n
         'subdomain',
       ],
       lookupQuerystring: 'language',
+      lookupLocalStorage: 'i18nextLng', // Local storage key
+      lookupCookie: 'i18next', // Cookie key
+      caches: ['localStorage', 'cookie'], // Save the language in localStorage and cookie
     },
     returnEmptyString: false,
     ns: 'translation',
     defaultNS: 'translation',
-
     interpolation: {
-      escapeValue: false, // not needed for react as it escapes by default
+      escapeValue: false, // Not needed for React as it escapes by default
     },
   });
+
+// Check if a language is set in localStorage or cookie, if not, set it to 'rs'
+const userLanguage = localStorage.getItem('i18nextLng') || i18n.language || 'rs';
+if (!localStorage.getItem('i18nextLng')) {
+  localStorage.setItem('i18nextLng', 'rs');
+  i18n.changeLanguage('rs');
+}
 
 export default i18n;
