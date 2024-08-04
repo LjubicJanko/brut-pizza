@@ -53,7 +53,7 @@ const MenuCategories = () => {
           <FlipCard
             front={
               <div className="front-inner">
-                <img src={menuCategory.imageSrc} />
+                <img src={menuCategory.imageSrc} alt={menuCategory.title} />
                 <p className="title">{t(menuCategory.title).toUpperCase()}</p>
               </div>
             }
