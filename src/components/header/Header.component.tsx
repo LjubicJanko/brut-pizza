@@ -53,7 +53,7 @@ const Header = () => {
       <Styled.HeaderContainer>
         <img
           className="brut-logo"
-          src={'brut-logo.svg'}
+          src="https://brutpizza.imgix.net/brut-logo.svg"
           alt="brut-logo"
           loading="lazy"
           onClick={() => navigate(PATH.HOME)}

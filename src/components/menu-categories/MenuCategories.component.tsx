@@ -19,27 +19,27 @@ const MenuCategories = () => {
     () => [
       {
         title: 'actions',
-        imageSrc: '/discount.png',
+        imageSrc: 'https://brutpizza.imgix.net/discount.png',
         to: '/menu#actions',
       },
       {
         title: 'pizza',
-        imageSrc: '/pizza/corizo.png',
+        imageSrc: 'https://brutpizza.imgix.net/corizo.png',
         to: '/menu#pizza',
       },
       {
         title: 'sandwiches',
-        imageSrc: '/sandwiches/sendvic.png',
+        imageSrc: 'https://brutpizza.imgix.net/sendvic.png',
         to: '/menu#sandwiches',
       },
       {
         title: 'pancakes',
-        imageSrc: '/pancakes/nutela.png',
+        imageSrc: 'https://brutpizza.imgix.net/nutela.png',
         to: '/menu#pancakes',
       },
       {
         title: 'drinks',
-        imageSrc: '/pepsi.png',
+        imageSrc: 'https://brutpizza.imgix.net/pepsi.png',
         to: '/menu#drinks',
       },
     ],

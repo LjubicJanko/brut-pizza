@@ -16,10 +16,10 @@ export type MenuItemProps = MenuItemType & {
   className?: string;
 };
 
-// const placeholderImage = '/placeholder.png';
+const placeholderImage = '/placeholder.png';
 
 const MenuItem = ({
-  // imgSrc,
+  imgSrc,
   name,
   price,
   oldPrice,
@@ -45,7 +45,7 @@ const MenuItem = ({
 
   return (
     <Styled.MenuItemContainer className={className}>
-      {/* {imgSrc && (
+      {imgSrc && (
         <img
           src={imgSrc}
           onError={({ currentTarget }) => {
@@ -53,7 +53,7 @@ const MenuItem = ({
             currentTarget.src = placeholderImage;
           }}
         />
-      )} */}
+      )}
       <div className="name-and-price">
         <span className="name">{t(name)}</span>
         <span className="separator"></span>
