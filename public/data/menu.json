@@ -1,85 +1,85 @@
 {
   "pizza": [
     {
-      "imgSrc": "https://brutpizza.imgix.net/pizza/Brut.png",
+      "imgSrc": "/pizza/Brut.png",
       "name": "menu-pizza-brut-name",
       "price": "800 / 1200 / 1700",
       "ingredients": "menu-pizza-brut-ingredients"
     },
     {
-      "imgSrc": "https://brutpizza.imgix.net/pizza/Funghi.png",
-      "name": "menu-pizza-funghi-name",
-      "price": "550 / 1000 / 1400",
-      "ingredients": "menu-pizza-funghi-ingredients"
-    },
-    {
-      "imgSrc": "https://brutpizza.imgix.net/pizza/Corizo.png",
+      "imgSrc": "/pizza/corizo.png",
       "name": "menu-pizza-corizo-name",
       "price": "900 / 1400 / 1800",
       "ingredients": "menu-pizza-corizo-ingredients"
     },
     {
-      "imgSrc": "https://brutpizza.imgix.net/pizza/Madjarica.png",
+      "imgSrc": "/pizza/Madjarica.png",
       "name": "menu-pizza-madjarica-name",
       "price": "650 / 1200 / 1600",
       "ingredients": "menu-pizza-madjarica-ingredients"
     },
     {
-      "imgSrc": "https://brutpizza.imgix.net/pizza/Prosciutto.png",
+      "imgSrc": "/pizza/Prosciutto.png",
       "name": "menu-pizza-prsuto-name",
       "price": "750 / 1200 / 1750",
       "ingredients": "menu-pizza-prsuto-ingredients"
     },
     {
-      "imgSrc": "https://brutpizza.imgix.net/pizza/Vojvodjanka.png",
+      "imgSrc": "/pizza/Vojvodjanka.png",
       "name": "menu-pizza-vojvodjanka-name",
       "price": "750 / 1200 / 1700",
       "ingredients": "menu-pizza-vojvodjanka-ingredients"
     },
     {
-      "imgSrc": "https://brutpizza.imgix.net/pizza/Quattro_Stragoni.png",
+      "imgSrc": "/pizza/Quattro_Stragoni.png",
       "name": "menu-pizza-quattro_stagioni-name",
       "price": "750 / 1200 / 1700",
       "ingredients": "menu-pizza-quattro_stagioni-ingredients"
     },
     {
-      "imgSrc": "https://brutpizza.imgix.net/pizza/Kapricoza.png",
+      "imgSrc": "/pizza/Kapricoza.png",
       "name": "menu-pizza-kapricoza-name",
       "price": "600 / 1000 / 1500",
       "ingredients": "menu-pizza-kapricoza-ingredients"
     },
     {
-      "imgSrc": "https://brutpizza.imgix.net/pizza/Carbonara.png",
+      "imgSrc": "/pizza/Carbonara.png",
       "name": "menu-pizza-karbonara-name",
       "price": "650 / 950 / 1400",
       "ingredients": "menu-pizza-karbonara-ingredients"
     },
     {
-      "imgSrc": "https://brutpizza.imgix.net/pizza/Provolone.png",
+      "imgSrc": "/pizza/Provolone.png",
       "name": "menu-pizza-provolone-name",
       "price": "750 / 1150 / 1750",
       "ingredients": "menu-pizza-provolone-ingredients"
     },
     {
-      "imgSrc": "https://brutpizza.imgix.net/pizza/Quattro_Formaggi.png",
+      "imgSrc": "/pizza/Quattro_Formaggi.png",
       "name": "menu-pizza-quattro_formaggi-name",
       "price": "650 / 1050 / 1650",
       "ingredients": "menu-pizza-quattro_formaggi-ingredients"
     },
     {
-      "imgSrc": "https://brutpizza.imgix.net/pizza/Madgarita.png",
+      "imgSrc": "/pizza/Funghi.png",
+      "name": "menu-pizza-funghi-name",
+      "price": "550 / 1000 / 1400",
+      "ingredients": "menu-pizza-funghi-ingredients"
+    },
+    {
+      "imgSrc": "/pizza/Madgarita.png",
       "name": "menu-pizza-margarita-name",
       "price": "550 / 900 / 1200",
       "ingredients": "menu-pizza-margarita-ingredients"
     },
     {
-      "imgSrc": "https://brutpizza.imgix.net/pizza/Vegeterijana.png",
+      "imgSrc": "/pizza/Vegeterijana.png",
       "name": "menu-pizza-vegetarijana-name",
       "price": "500 / 900 / 1300",
       "ingredients": "menu-pizza-vegetarijana-ingredients"
     },
     {
-      "imgSrc": "https://brutpizza.imgix.net/pizza/Tuna.png",
+      "imgSrc": "/pizza/Tuna.png",
       "name": "menu-pizza-tuna-name",
       "price": "650 / 1050 / 1600",
       "ingredients": "menu-pizza-tuna-ingredients"

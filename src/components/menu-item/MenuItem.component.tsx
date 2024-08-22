@@ -52,6 +52,7 @@ const MenuItem = ({
             currentTarget.onerror = null;
             currentTarget.src = placeholderImage;
           }}
+          loading='lazy'
         />
       )}
       <div className="name-and-price">
