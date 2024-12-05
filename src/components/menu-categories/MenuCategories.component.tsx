@@ -24,12 +24,12 @@ const MenuCategories = () => {
       },
       {
         title: 'pizza',
-        imageSrc: 'https://brutpizza.imgix.net/corizo.png',
+        imageSrc: 'https://brutpizza.imgix.net/pizza/Mala_Vojvodjanka.png',
         to: '/menu#pizza',
       },
       {
         title: 'sandwiches',
-        imageSrc: 'https://brutpizza.imgix.net/sendvic.png',
+        imageSrc: 'https://brutpizza.imgix.net/sandwiches/prsuta.png',
         to: '/menu#sandwiches',
       },
       {
