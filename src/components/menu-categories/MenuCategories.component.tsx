@@ -10,6 +10,7 @@ type MenuCategoryType = {
   title: string;
   imageSrc: string;
   to: string;
+  aria: string;
 };
 
 const MenuCategories = () => {
@@ -21,55 +22,74 @@ const MenuCategories = () => {
         title: 'actions',
         imageSrc: 'https://brutpizza.imgix.net/discount.png',
         to: '/menu#actions',
+        aria: 'aria-label.actions',
       },
       {
         title: 'pizza',
         imageSrc: 'https://brutpizza.imgix.net/pizza/Mala_Vojvodjanka.png',
         to: '/menu#pizza',
+        aria: 'aria-label.pizza',
       },
       {
         title: 'sandwiches',
         imageSrc: 'https://brutpizza.imgix.net/sandwiches/prsuta.png',
         to: '/menu#sandwiches',
+        aria: 'aria-label.sandwiches',
       },
       {
         title: 'pancakes',
         imageSrc: 'https://brutpizza.imgix.net/nutela.png',
         to: '/menu#pancakes',
+        aria: 'aria-label.pancakes',
       },
       {
         title: 'drinks',
         imageSrc: 'https://brutpizza.imgix.net/pepsi.png',
         to: '/menu#drinks',
+        aria: 'aria-label.drinks',
       },
     ],
     []
   );
 
   return (
-    <Styled.MenuCategoriesContainer>
-      {menuCategories.map((menuCategory, index) => (
-        <ScrollItem key={index}>
-          <FlipCard
-            front={
-              <div className="front-inner">
-                <img src={menuCategory.imageSrc} alt={menuCategory.title} />
-                <p className="title">{t(menuCategory.title).toUpperCase()}</p>
-              </div>
-            }
-            back={
-              <div>
-                <Link to={menuCategory.to}>
-                  <Button variant="outlined" className="check-offer-btn">
-                    {t('check-offer')}
-                  </Button>
-                </Link>
-              </div>
-            }
-          />
-        </ScrollItem>
-      ))}
-    </Styled.MenuCategoriesContainer>
+    <>
+      <Styled.MenuCategoriesContainer>
+        <h2>{t('menu-categories-title')}</h2>
+        <div className="menu-categories">
+          {menuCategories.map((menuCategory, index) => (
+            <ScrollItem key={index}>
+              <FlipCard
+                front={
+                  <div className="front-inner">
+                    <img
+                      src={menuCategory.imageSrc}
+                      alt={`${t(menuCategory.title)} ${t('alt.menu-category')}`}
+                    />
+                    <p className="title">
+                      {t(menuCategory.title).toUpperCase()}
+                    </p>
+                  </div>
+                }
+                back={
+                  <div>
+                    <Link to={menuCategory.to}>
+                      <Button
+                        variant="outlined"
+                        className="check-offer-btn"
+                        aria-label={t(menuCategory.aria)}
+                      >
+                        {t('check-offer')}
+                      </Button>
+                    </Link>
+                  </div>
+                }
+              />
+            </ScrollItem>
+          ))}
+        </div>
+      </Styled.MenuCategoriesContainer>
+    </>
   );
 };
 

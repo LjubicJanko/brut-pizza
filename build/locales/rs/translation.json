@@ -133,5 +133,16 @@
   "menu-actions-carbonara": "Карбонара 50цм + 2 x Пепси 0,33",
   "menu-actions-corizo": "Ћоризо 50cm + 2 x Пепси 0,33",
   "menu-actions-kapricoza": "Каприћоза 50cm + Пепси & Пепси Макс",
-  "menu-actions-parce": "Парче + Пепси 0,33"
+  "menu-actions-parce": "Парче + Пепси 0,33",
+  "alt": {
+    "menu-category": "мени категорија"
+  },
+  "aria-label": {
+    "actions": "Понуде са попустом",
+    "pizza": "Мени са пицама",
+    "sandwiches": "Мени са сендвичима",
+    "pancakes": "Мени са палачинкама",
+    "drinks": "Мени са пићима"
+  },
+  "menu-categories-title": "Истражите наш мени\n пица, сендвичи, палачинке и још много тога у Брут Пицерији"
 }

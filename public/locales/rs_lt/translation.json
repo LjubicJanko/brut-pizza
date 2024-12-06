@@ -133,5 +133,16 @@
   "menu-actions-carbonara": "Karbonara 50cm + 2 x Pepsi 0,33",
   "menu-actions-corizo": "Ćorizo 50cm + 2 x Pepsi 0,33",
   "menu-actions-kapricoza": "Kaprićoza 50cm + Pepsi & Pepsi Max",
-  "menu-actions-parce": "Parče + Pepsi 0,33"
+  "menu-actions-parce": "Parče + Pepsi 0,33",
+  "alt": {
+    "menu-category": "meni kategorija"
+  },
+  "aria-label": {
+    "actions": "Ponude sa popustom",
+    "pizza": "Meni sa picama",
+    "sandwiches": "Meni sa sendvičima",
+    "pancakes": "Meni sa palačinkama",
+    "drinks": "Meni sa pićima"
+  },
+  "menu-categories-title": "Istražite naš meni\n pica, sendviči, palačinke i još mnogo toga u Brut Piceriji"
 }

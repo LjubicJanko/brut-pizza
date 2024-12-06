@@ -133,5 +133,16 @@
   "menu-actions-carbonara": "Carbonara 50cm + 2 x Pepsi 0,33",
   "menu-actions-corizo": "Corizo 50cm + 2 x Pepsi 0,33",
   "menu-actions-kapricoza": "Capricciosa 50cm + Pepsi & Pepsi Max",
-  "menu-actions-parce": "Slice + Pepsi 0,33"
+  "menu-actions-parce": "Slice + Pepsi 0,33",
+  "alt": {
+    "menu-category": "menu category"
+  },
+  "aria-label": {
+    "actions": "Discount Offers",
+    "pizza": "Pizza Menu",
+    "sandwiches": "Sandwich Menu",
+    "pancakes": "Pancakes Menu",
+    "drinks": "Drinks Menu"
+  },
+  "menu-categories-title": "Explore our menu\n pizza, sandwiches, pancakes & more at Brut Pizzeria"
 }
