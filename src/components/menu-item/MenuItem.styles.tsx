@@ -74,5 +74,6 @@ export const MenuItemContainer = styled.div`
     font-size: 12px;
     color: var(--color-white);
     text-align: left;
+    white-space: pre-wrap;
   }
 `;

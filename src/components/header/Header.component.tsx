@@ -124,28 +124,6 @@ const Header = () => {
                 <p>latinica</p>
               </div>
             </li>
-            {/* <li>
-              <img
-                onClick={() => changeLanguage('rs')}
-                className={classNames('flag', {
-                  'flag--selected': selectedLanguage === 'rs',
-                })}
-                src="/rs.png"
-                alt="serbian"
-              />
-              <p>ћирилица</p>
-            </li>
-            <li>
-              <img
-                onClick={() => changeLanguage('rs_lt')}
-                className={classNames('flag', {
-                  'flag--selected': selectedLanguage === 'rs_lt',
-                })}
-                src="/rs.png"
-                alt="english"
-              />
-              <p>latinica</p>
-            </li> */}
           </ul>
         </div>
       </Styled.HamburgerMenu>

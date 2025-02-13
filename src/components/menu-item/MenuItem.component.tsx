@@ -39,7 +39,7 @@ const MenuItem = ({
           {price}&nbsp;
           {t('dinars')}
         </span>
-        <Divider className='action-divider'/>
+        <Divider className="action-divider" />
       </Styled.MenuItemContainer>
     );
 
@@ -52,7 +52,7 @@ const MenuItem = ({
             currentTarget.onerror = null;
             currentTarget.src = placeholderImage;
           }}
-          loading='lazy'
+          loading="lazy"
         />
       )}
       <div className="name-and-price">
