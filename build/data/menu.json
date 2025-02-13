@@ -3,37 +3,37 @@
     {
       "imgSrc": "https://brutpizza.imgix.net/pizza/Mala_Brut.png",
       "name": "menu-pizza-brut-name",
-      "price": "800 / 1200 / 1700",
+      "price": "850 / 1300 / 1850",
       "ingredients": "menu-pizza-brut-ingredients"
     },
     {
       "imgSrc": "https://brutpizza.imgix.net/pizza/Mala_Funghi.png",
       "name": "menu-pizza-funghi-name",
-      "price": "550 / 1000 / 1400",
+      "price": "550 / 900 / 1400",
       "ingredients": "menu-pizza-funghi-ingredients"
     },
     {
       "imgSrc": "https://brutpizza.imgix.net/pizza/Mala_Corizo.png",
       "name": "menu-pizza-corizo-name",
-      "price": "900 / 1400 / 1800",
+      "price": "950 / 1500 / 2100",
       "ingredients": "menu-pizza-corizo-ingredients"
     },
     {
       "imgSrc": "https://brutpizza.imgix.net/pizza/Mala_Madjarica.png",
       "name": "menu-pizza-madjarica-name",
-      "price": "650 / 1200 / 1600",
+      "price": "750 / 1200 / 1750",
       "ingredients": "menu-pizza-madjarica-ingredients"
     },
     {
       "imgSrc": "https://brutpizza.imgix.net/pizza/Mala_Prosciutto.png",
       "name": "menu-pizza-prsuto-name",
-      "price": "750 / 1200 / 1750",
+      "price": "850 / 1400 / 1950",
       "ingredients": "menu-pizza-prsuto-ingredients"
     },
     {
       "imgSrc": "https://brutpizza.imgix.net/pizza/Mala_Vojvodjanka.png",
       "name": "menu-pizza-vojvodjanka-name",
-      "price": "750 / 1200 / 1700",
+      "price": "750 / 1200 / 1800",
       "ingredients": "menu-pizza-vojvodjanka-ingredients"
     },
     {
@@ -45,49 +45,49 @@
     {
       "imgSrc": "https://brutpizza.imgix.net/pizza/Mala_Kapricoza.png",
       "name": "menu-pizza-kapricoza-name",
-      "price": "600 / 1000 / 1500",
+      "price": "600 / 1000 / 1600",
       "ingredients": "menu-pizza-kapricoza-ingredients"
     },
     {
       "imgSrc": "https://brutpizza.imgix.net/pizza/Mala_Carbonara.png",
       "name": "menu-pizza-karbonara-name",
-      "price": "650 / 950 / 1400",
+      "price": "700 / 1000 / 1600",
       "ingredients": "menu-pizza-karbonara-ingredients"
     },
     {
       "imgSrc": "https://brutpizza.imgix.net/pizza/Mala_Provolone.png",
       "name": "menu-pizza-provolone-name",
-      "price": "750 / 1150 / 1750",
+      "price": "800 / 1200 / 1800",
       "ingredients": "menu-pizza-provolone-ingredients"
     },
     {
       "imgSrc": "https://brutpizza.imgix.net/pizza/Mala_Quattro Formaggi.png",
       "name": "menu-pizza-quattro_formaggi-name",
-      "price": "650 / 1050 / 1650",
+      "price": "750 / 1150 / 1700",
       "ingredients": "menu-pizza-quattro_formaggi-ingredients"
     },
     {
       "imgSrc": "https://brutpizza.imgix.net/pizza/Mala_Margarita.png",
       "name": "menu-pizza-margarita-name",
-      "price": "550 / 900 / 1200",
+      "price": "550 / 800 / 1300",
       "ingredients": "menu-pizza-margarita-ingredients"
     },
     {
       "imgSrc": "https://brutpizza.imgix.net/pizza/Mala_Vegeterijana.png",
       "name": "menu-pizza-vegetarijana-name",
-      "price": "500 / 900 / 1300",
+      "price": "600 / 1000 / 1600",
       "ingredients": "menu-pizza-vegetarijana-ingredients"
     },
     {
       "imgSrc": "https://brutpizza.imgix.net/pizza/Mala_Tuna.png",
       "name": "menu-pizza-tuna-name",
-      "price": "650 / 1050 / 1600",
+      "price": "700 / 1100 / 1700",
       "ingredients": "menu-pizza-tuna-ingredients"
     },
     {
       "imgSrc": "",
       "name": "menu-pizza-parce-name",
-      "price": "250",
+      "price": "270",
       "ingredients": ""
     }
   ],
@@ -117,6 +117,10 @@
       "price": "50"
     },
     {
+      "name": "menu-pizza_additions-feferoni",
+      "price": "60"
+    },
+    {
       "name": "menu-pizza_additions-gauda",
       "price": "80"
     },
@@ -138,6 +142,10 @@
     },
     {
       "name": "menu-pizza_additions-gorgonzola",
+      "price": "230"
+    },
+    {
+      "name": "menu-pizza_additions-cedar",
       "price": "230"
     },
     {
@@ -167,56 +175,66 @@
     {
       "name": "menu-pizza_additions-pileca_prsa",
       "price": "70"
+    },
+    {
+      "name": "menu-pizza_additions-tuna",
+      "price": "200"
     }
   ],
   "sandwiches": [
     {
       "imgSrc": "https://brutpizza.imgix.net/sandwiches/kulen.png",
       "name": "menu-sandwiches-kulen-name",
-      "price": "500",
+      "price": "590",
       "ingredients": "menu-sandwiches-kulen-ingredients"
     },
     {
       "imgSrc": "https://brutpizza.imgix.net/sandwiches/Pecenica.png",
       "name": "menu-sandwiches-pecenica-name",
-      "price": "500",
+      "price": "590",
       "ingredients": "menu-sandwiches-pecenica-ingredients"
     },
     {
       "imgSrc": "https://brutpizza.imgix.net/sandwiches/pileca_prsa.png",
       "name": "menu-sandwiches-pileca_prsa-name",
-      "price": "450",
+      "price": "540",
       "ingredients": "menu-sandwiches-pileca_prsa-ingredients"
     },
     {
       "imgSrc": "https://brutpizza.imgix.net/sandwiches/sunka.png",
       "name": "menu-sandwiches-sunka-name",
-      "price": "450",
+      "price": "540",
       "ingredients": "menu-sandwiches-sunka-ingredients"
     },
     {
       "imgSrc": "https://brutpizza.imgix.net/sandwiches/prsuta.png",
       "name": "menu-sandwiches-prsuta-name",
-      "price": "530",
+      "price": "690",
       "ingredients": "menu-sandwiches-prsuta-ingredients"
     },
     {
       "imgSrc": "https://brutpizza.imgix.net/sandwiches/suvi_vrat.png",
       "name": "menu-sandwiches-suvi_vrat-name",
-      "price": "500",
+      "price": "590",
       "ingredients": "menu-sandwiches-suvi_vrat-ingredients"
     },
     {
       "imgSrc": "https://brutpizza.imgix.net/sandwiches/Brut.png",
       "name": "menu-sandwiches-brut-name",
-      "price": "590",
+      "price": "690",
       "ingredients": "menu-sandwiches-brut-ingredients"
     },
     {
       "imgSrc": "https://brutpizza.imgix.net/sandwiches/madjarica.png",
       "name": "menu-sandwiches-madjarica-name",
-      "price": "500",
+      "price": "590",
       "ingredients": "menu-sandwiches-madjarica-ingredients"
+    },
+    {
+      "imgSrc": "https://brutpizza.imgix.net/sandwiches/tuna.png",
+      "name": "menu-sandwiches-tuna-name",
+      "price": "570",
+      "ingredients": "menu-sandwiches-tuna-ingredients"
     }
   ],
   "pancakes": [
@@ -271,7 +289,7 @@
     {
       "imgSrc": "",
       "name": "menu-pancakes-svarcvald-name",
-      "price": "290",
+      "price": "380",
       "ingredients": "menu-pancakes-svarcvald-ingredients"
     },
     {
@@ -421,8 +439,8 @@
     {
       "imgSrc": "",
       "name": "menu-actions-carbonara",
-      "price": "1500",
-      "oldPrice": "1660",
+      "price": "1700",
+      "oldPrice": "1860",
       "ingredients": "",
       "isAction": "true"
     },
@@ -437,16 +455,16 @@
     {
       "imgSrc": "",
       "name": "menu-actions-kapricoza",
-      "price": "1600",
-      "oldPrice": "1760",
+      "price": "1700",
+      "oldPrice": "1860",
       "ingredients": "",
       "isAction": "true"
     },
     {
       "imgSrc": "",
       "name": "menu-actions-parce",
-      "price": "360",
-      "oldPrice": "380",
+      "price": "340",
+      "oldPrice": "400",
       "ingredients": "",
       "isAction": "true"
     }
